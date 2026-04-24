@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System — Farmácia UFMG</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="dist/latest/farmacia-ds.min.css">
+  <script src="dist/latest/farmacia-ds.min.js"></script>
+
+</head>
+
+<body>
+  <div class="ffds-root">
+
+  <!-- NAV -->
+  <nav class="ffds-nav">
+    <div class="ffds-nav-brand">⬡ Design System</div>
+    <ul class="ffds-nav-links">
+      <li><a href="#colors">Cores</a></li>
+      <li><a href="#typography">Tipografia</a></li>
+      <li><a href="#spacing">Espaçamento</a></li>
+      <li><a href="#buttons">Botões</a></li>
+      <li><a href="#forms">Formulários</a></li>
+      <li><a href="#badges">Badges</a></li>
+      <li><a href="#alerts">Alertas</a></li>
+      <li><a href="#cards">Cards</a></li>
+      <li><a href="#navigation">Navegação</a></li>
+      <li><a href="#data">Dados</a></li>
+      <li><a href="#tokens">Tokens</a></li>
+      <li><a href="#email">E-mail</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="ffds-hero">
+    <div class="ffds-hero-inner">
+      <span class="ffds-hero-tag">Faculdade de Farmácia · UFMG</span>
+      <h1>Design<br><span>System</span></h1>
+      <p>Guia de referência visual para aplicações da Faculdade de Farmácia da UFMG. Tokens, componentes e padrões de
+        interface prontos para uso.</p>
+      <div class="ffds-hero-meta">
+        <div class="ffds-hero-meta-item"><strong>#f2b600</strong>Cor Primária</div>
+        <div class="ffds-hero-meta-item"><strong>#2d2d2d</strong>Cor Secundária</div>
+        <div class="ffds-hero-meta-item"><strong>Playfair Display</strong>Display Font</div>
+        <div class="ffds-hero-meta-item"><strong>DM Sans</strong>Body Font</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ COLORS ══════ -->
+  <div id="colors" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">01 · Paleta de Cores</div>
+        <h2 class="ffds-section-title">Color Tokens</h2>
+        <p class="ffds-section-desc">Todas as cores definidas via CSS custom properties para garantir consistência em toda
+          a aplicação.</p>
+      </div>
+
+      <div class="ffds-swatch-group">
+        <div class="ffds-swatch-group-label">Primária — Âmbar Institucional</div>
+        <div class="ffds-swatches">
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#f7cc4b"></div>
+            <div class="ffds-swatch-name">primary-light</div>
+            <div class="ffds-swatch-hex">#f7cc4b</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#f2b600; border:2px solid #c99200;"></div>
+            <div class="ffds-swatch-name">primary ★</div>
+            <div class="ffds-swatch-hex">#f2b600</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#c99200"></div>
+            <div class="ffds-swatch-name">primary-dark</div>
+            <div class="ffds-swatch-hex">#c99200</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:rgba(242,182,0,0.20); border:1px dashed #c99200;"></div>
+            <div class="ffds-swatch-name">primary-20</div>
+            <div class="ffds-swatch-hex">rgba(242,182,0,.20)</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:rgba(242,182,0,0.10); border:1px dashed #c99200;"></div>
+            <div class="ffds-swatch-name">primary-10</div>
+            <div class="ffds-swatch-hex">rgba(242,182,0,.10)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ffds-swatch-group">
+        <div class="ffds-swatch-group-label">Secundária — Grafite</div>
+        <div class="ffds-swatches">
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#444444"></div>
+            <div class="ffds-swatch-name">secondary-light</div>
+            <div class="ffds-swatch-hex">#444444</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#2d2d2d; border:2px solid #444;"></div>
+            <div class="ffds-swatch-name">secondary ★</div>
+            <div class="ffds-swatch-hex">#2d2d2d</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#1a1a1a"></div>
+            <div class="ffds-swatch-name">secondary-dark</div>
+            <div class="ffds-swatch-hex">#1a1a1a</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ffds-swatch-group">
+        <div class="ffds-swatch-group-label">Neutros</div>
+        <div class="ffds-swatches">
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#f9f8f6; border:1px solid #e4e0d8;"></div>
+            <div class="ffds-swatch-name">gray-50</div>
+            <div class="ffds-swatch-hex">#f9f8f6</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#f2f0ec"></div>
+            <div class="ffds-swatch-name">gray-100</div>
+            <div class="ffds-swatch-hex">#f2f0ec</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#e4e0d8"></div>
+            <div class="ffds-swatch-name">gray-200</div>
+            <div class="ffds-swatch-hex">#e4e0d8</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#c8c2b6"></div>
+            <div class="ffds-swatch-name">gray-300</div>
+            <div class="ffds-swatch-hex">#c8c2b6</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#9e9588"></div>
+            <div class="ffds-swatch-name">gray-400</div>
+            <div class="ffds-swatch-hex">#9e9588</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#706860"></div>
+            <div class="ffds-swatch-name">gray-500</div>
+            <div class="ffds-swatch-hex">#706860</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#504840"></div>
+            <div class="ffds-swatch-name">gray-600</div>
+            <div class="ffds-swatch-hex">#504840</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#3a3028"></div>
+            <div class="ffds-swatch-name">gray-700</div>
+            <div class="ffds-swatch-hex">#3a3028</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#2d2520"></div>
+            <div class="ffds-swatch-name">gray-800</div>
+            <div class="ffds-swatch-hex">#2d2520</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#1a1410"></div>
+            <div class="ffds-swatch-name">gray-900</div>
+            <div class="ffds-swatch-hex">#1a1410</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ffds-swatch-group">
+        <div class="ffds-swatch-group-label">Semânticas</div>
+        <div class="ffds-swatches">
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#2d7a4f"></div>
+            <div class="ffds-swatch-name">success</div>
+            <div class="ffds-swatch-hex">#2d7a4f</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#edf7f2; border:1px solid #b8dfca;"></div>
+            <div class="ffds-swatch-name">success-bg</div>
+            <div class="ffds-swatch-hex">#edf7f2</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#b86a00"></div>
+            <div class="ffds-swatch-name">warning</div>
+            <div class="ffds-swatch-hex">#b86a00</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#fff4e0; border:1px solid #f5d6a0;"></div>
+            <div class="ffds-swatch-name">warning-bg</div>
+            <div class="ffds-swatch-hex">#fff4e0</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#b83232"></div>
+            <div class="ffds-swatch-name">error</div>
+            <div class="ffds-swatch-hex">#b83232</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#fdf0f0; border:1px solid #f0bfbf;"></div>
+            <div class="ffds-swatch-name">error-bg</div>
+            <div class="ffds-swatch-hex">#fdf0f0</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#1a5fa8"></div>
+            <div class="ffds-swatch-name">info</div>
+            <div class="ffds-swatch-hex">#1a5fa8</div>
+          </div>
+          <div class="ffds-swatch">
+            <div class="ffds-swatch-block" style="background:#eef4fd; border:1px solid #bbd1f0;"></div>
+            <div class="ffds-swatch-name">info-bg</div>
+            <div class="ffds-swatch-hex">#eef4fd</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contrast note -->
+      <div class="ffds-card" style="background:var(--color-primary-10); border-color:var(--color-primary-dark);">
+        <div class="ffds-label">♿ Acessibilidade — Contraste</div>
+        <div class="ffds-flex">
+          <div
+            style="background:#f2b600; color:#1a1a1a; padding: var(--space-3) var(--space-4); border-radius:var(--radius-md); font-weight:700; font-size:var(--text-sm);">
+            Primária sobre Escuro ✓ AA</div>
+          <div
+            style="background:#2d2d2d; color:#f2b600; padding: var(--space-3) var(--space-4); border-radius:var(--radius-md); font-weight:700; font-size:var(--text-sm);">
+            Âmbar sobre Grafite ✓ AA</div>
+          <div
+            style="background:#1a1a1a; color:#ffffff; padding: var(--space-3) var(--space-4); border-radius:var(--radius-md); font-weight:700; font-size:var(--text-sm);">
+            Branco sobre Preto ✓ AAA</div>
+          <div
+            style="background:#f9f8f6; color:#2d2520; padding: var(--space-3) var(--space-4); border-radius:var(--radius-md); border:1px solid var(--color-gray-200); font-weight:700; font-size:var(--text-sm);">
+            Texto sobre Fundo ✓ AAA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ TYPOGRAPHY ══════ -->
+  <div id="typography" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">02 · Tipografia</div>
+        <h2 class="ffds-section-title">Type System</h2>
+        <p class="ffds-section-desc">Playfair Display para títulos institucionais com peso e autoridade. DM Sans para
+          corpo de texto — legível e moderno. DM Mono para código e dados.</p>
+      </div>
+
+      <div class="ffds-card ffds-mb-6">
+        <div class="ffds-label">Famílias Tipográficas</div>
+        <div class="ffds-grid-3">
+          <div>
+            <div
+              style="font-family:'Playfair Display',serif; font-size:2rem; font-weight:700; color:var(--color-secondary-dark); line-height:1.2; margin-bottom:var(--space-2);">
+              Playfair Display</div>
+            <div style="font-size:var(--text-xs); color:var(--color-gray-400);">Display · Títulos · Destaques</div>
+            <code>font-family: var(--font-display)</code>
+          </div>
+          <div>
+            <div
+              style="font-family:'DM Sans',sans-serif; font-size:1.5rem; font-weight:400; color:var(--color-gray-700); margin-bottom:var(--space-2);">
+              DM Sans Regular</div>
+            <div style="font-size:var(--text-xs); color:var(--color-gray-400);">Body · Interface · Rótulos</div>
+            <code>font-family: var(--font-body)</code>
+          </div>
+          <div>
+            <div
+              style="font-family:'DM Mono',monospace; font-size:1rem; color:var(--color-gray-600); margin-bottom:var(--space-2);">
+              DM Mono 0123<br>const x = 42;</div>
+            <div style="font-size:var(--text-xs); color:var(--color-gray-400);">Código · Dados · Tokens</div>
+            <code>font-family: var(--font-mono)</code>
+          </div>
+        </div>
+      </div>
+
+      <div class="ffds-card">
+        <div class="ffds-label">Escala Tipográfica</div>
+
+        <div class="ffds-type-sample">
+          <div class="ffds-display-1">Display 1 — Título Principal</div>
+          <div class="ffds-type-meta"><span>--text-6xl · 3.75rem</span><span>Playfair Display 700</span><span>line-height:
+              1.1</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-display-2">Display 2 — Seção Hero</div>
+          <div class="ffds-type-meta"><span>--text-5xl · 3rem</span><span>Playfair Display 700</span><span>line-height:
+              1.1</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-h1">H1 — Título de Página</div>
+          <div class="ffds-type-meta"><span>--text-4xl · 2.25rem</span><span>Playfair Display 700</span><span>line-height:
+              1.2</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-h2">H2 — Título de Seção</div>
+          <div class="ffds-type-meta"><span>--text-3xl · 1.875rem</span><span>Playfair Display
+              600</span><span>line-height: 1.25</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-h3">H3 — Subtítulo</div>
+          <div class="ffds-type-meta"><span>--text-2xl · 1.5rem</span><span>Playfair Display 600</span><span>line-height:
+              1.3</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-h4">H4 — Cabeçalho de Card</div>
+          <div class="ffds-type-meta"><span>--text-xl · 1.25rem</span><span>DM Sans 600</span><span>line-height:
+              1.4</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-body-lg">Body Large — Texto de destaque, leads e introduções. A Faculdade de Farmácia da UFMG é
+            referência nacional no ensino e pesquisa farmacêutica.</div>
+          <div class="ffds-type-meta"><span>--text-lg · 1.125rem</span><span>DM Sans 400</span><span>line-height:
+              1.7</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-body">Body — Texto padrão de interface e conteúdo. Use para parágrafos, descrições e conteúdo
+            principal da aplicação.</div>
+          <div class="ffds-type-meta"><span>--text-base · 1rem</span><span>DM Sans 400</span><span>line-height: 1.6</span>
+          </div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-body-sm">Body Small — Texto auxiliar, rodapés de card, metadados e informações secundárias.
+          </div>
+          <div class="ffds-type-meta"><span>--text-sm · 0.875rem</span><span>DM Sans 400</span><span>line-height:
+              1.6</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-overline">Overline — Rótulo de Categoria</div>
+          <div class="ffds-type-meta"><span>--text-xs · 0.75rem</span><span>DM Sans 600</span><span>letter-spacing: 0.12em
+              · uppercase</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-caption">Caption — Créditos, notas de rodapé e textos auxiliares de baixa hierarquia.</div>
+          <div class="ffds-type-meta"><span>--text-xs · 0.75rem</span><span>DM Sans 400</span><span>line-height:
+              1.5</span></div>
+        </div>
+        <hr class="ffds-divider">
+
+        <div class="ffds-type-sample">
+          <div class="ffds-mono">const primary = '#f2b600'; // Âmbar UFMG</div>
+          <div class="ffds-type-meta"><span>--text-sm · 0.875rem</span><span>DM Mono 400</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ SPACING ══════ -->
+  <div id="spacing" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">03 · Espaçamento &amp; Forma</div>
+        <h2 class="ffds-section-title">Spacing, Radius &amp; Shadows</h2>
+      </div>
+
+      <div class="ffds-grid-3">
+        <div class="ffds-card">
+          <div class="ffds-label">Escala de Espaçamento (4px base)</div>
+          <div class="ffds-space-demo" style="align-items:flex-end;">
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:4px;height:4px;"></div>
+              <div class="ffds-space-lbl">--space-1</div>
+              <div class="ffds-space-val">4px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:8px;height:8px;"></div>
+              <div class="ffds-space-lbl">--space-2</div>
+              <div class="ffds-space-val">8px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:12px;height:12px;"></div>
+              <div class="ffds-space-lbl">--space-3</div>
+              <div class="ffds-space-val">12px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:16px;height:16px;"></div>
+              <div class="ffds-space-lbl">--space-4</div>
+              <div class="ffds-space-val">16px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:20px;height:20px;"></div>
+              <div class="ffds-space-lbl">--space-5</div>
+              <div class="ffds-space-val">20px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:24px;height:24px;"></div>
+              <div class="ffds-space-lbl">--space-6</div>
+              <div class="ffds-space-val">24px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:32px;height:32px;"></div>
+              <div class="ffds-space-lbl">--space-8</div>
+              <div class="ffds-space-val">32px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:40px;height:40px;"></div>
+              <div class="ffds-space-lbl">--space-10</div>
+              <div class="ffds-space-val">40px</div>
+            </div>
+            <div class="ffds-space-item">
+              <div class="ffds-space-box" style="width:48px;height:48px;"></div>
+              <div class="ffds-space-lbl">--space-12</div>
+              <div class="ffds-space-val">48px</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ffds-card">
+          <div class="ffds-label">Border Radius</div>
+          <div class="ffds-radius-demo" style="flex-wrap:wrap;">
+            <div class="ffds-radius-item">
+              <div class="ffds-radius-box" style="border-radius:4px;"></div>
+              <div class="ffds-radius-lbl">--radius-sm<br>4px</div>
+            </div>
+            <div class="ffds-radius-item">
+              <div class="ffds-radius-box" style="border-radius:8px;"></div>
+              <div class="ffds-radius-lbl">--radius-md<br>8px</div>
+            </div>
+            <div class="ffds-radius-item">
+              <div class="ffds-radius-box" style="border-radius:12px;"></div>
+              <div class="ffds-radius-lbl">--radius-lg<br>12px</div>
+            </div>
+            <div class="ffds-radius-item">
+              <div class="ffds-radius-box" style="border-radius:16px;"></div>
+              <div class="ffds-radius-lbl">--radius-xl<br>16px</div>
+            </div>
+            <div class="ffds-radius-item">
+              <div class="ffds-radius-box" style="border-radius:24px;"></div>
+              <div class="ffds-radius-lbl">--radius-2xl<br>24px</div>
+            </div>
+            <div class="ffds-radius-item">
+              <div class="ffds-radius-box" style="border-radius:9999px; width:64px; height:32px;"></div>
+              <div class="ffds-radius-lbl">--radius-full<br>9999px</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ffds-card">
+          <div class="ffds-label">Sombras</div>
+          <div class="ffds-shadow-demo">
+            <div class="ffds-shadow-item">
+              <div class="ffds-shadow-box" style="box-shadow:0 1px 3px rgba(0,0,0,0.08),0 1px 2px rgba(0,0,0,0.06);">sm</div>
+              <div class="ffds-caption">--shadow-sm</div>
+            </div>
+            <div class="ffds-shadow-item">
+              <div class="ffds-shadow-box" style="box-shadow:0 4px 12px rgba(0,0,0,0.10),0 2px 6px rgba(0,0,0,0.06);">md
+              </div>
+              <div class="ffds-caption">--shadow-md</div>
+            </div>
+            <div class="ffds-shadow-item">
+              <div class="ffds-shadow-box" style="box-shadow:0 10px 30px rgba(0,0,0,0.12),0 4px 12px rgba(0,0,0,0.08);">lg
+              </div>
+              <div class="ffds-caption">--shadow-lg</div>
+            </div>
+            <div class="ffds-shadow-item">
+              <div class="ffds-shadow-box" style="box-shadow:0 20px 50px rgba(0,0,0,0.15),0 8px 20px rgba(0,0,0,0.10);">xl
+              </div>
+              <div class="ffds-caption">--shadow-xl</div>
+            </div>
+            <div class="ffds-shadow-item">
+              <div class="ffds-shadow-box"
+                style="box-shadow:0 4px 20px rgba(242,182,0,0.30); border:1px solid rgba(242,182,0,0.4);">gold</div>
+              <div class="ffds-caption">--shadow-gold</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ BUTTONS ══════ -->
+  <div id="buttons" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">04 · Botões</div>
+        <h2 class="ffds-section-title">Button System</h2>
+      </div>
+
+      <div class="ffds-grid-2">
+        <div class="ffds-card">
+          <div class="ffds-label">Variantes</div>
+          <div class="ffds-flex">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-md">Primário</button>
+            <button class="ffds-btn ffds-btn-secondary ffds-btn-md">Secundário</button>
+            <button class="ffds-btn ffds-btn-outline ffds-btn-md">Outline Âmbar</button>
+            <button class="ffds-btn ffds-btn-outline-dark ffds-btn-md">Outline Escuro</button>
+            <button class="ffds-btn ffds-btn-ghost ffds-btn-md">Ghost</button>
+            <button class="ffds-btn ffds-btn-danger ffds-btn-md">Perigo</button>
+            <button class="ffds-btn ffds-btn-primary ffds-btn-md ffds-btn-disabled" disabled>Desativado</button>
+          </div>
+        </div>
+
+        <div class="ffds-card">
+          <div class="ffds-label">Tamanhos</div>
+          <div class="ffds-flex-center">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-xs">Extra Pequeno</button>
+            <button class="ffds-btn ffds-btn-primary ffds-btn-sm">Pequeno</button>
+            <button class="ffds-btn ffds-btn-primary ffds-btn-md">Médio</button>
+            <button class="ffds-btn ffds-btn-primary ffds-btn-lg">Grande</button>
+            <button class="ffds-btn ffds-btn-primary ffds-btn-xl">Extra Grande</button>
+          </div>
+        </div>
+
+        <div class="ffds-card">
+          <div class="ffds-label">Com Ícones</div>
+          <div class="ffds-flex">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-md">▶ Iniciar</button>
+            <button class="ffds-btn ffds-btn-secondary ffds-btn-md">↓ Baixar</button>
+            <button class="ffds-btn ffds-btn-outline ffds-btn-md">+ Adicionar</button>
+            <button class="ffds-btn ffds-btn-ghost ffds-btn-md">✕ Fechar</button>
+            <button class="ffds-btn ffds-btn-primary ffds-btn-icon">✉</button>
+            <button class="ffds-btn ffds-btn-secondary ffds-btn-icon">⚙</button>
+            <button class="ffds-btn ffds-btn-outline ffds-btn-icon">↗</button>
+          </div>
+        </div>
+
+        <div class="ffds-card" style="background:var(--color-secondary-dark);">
+          <div class="ffds-label" style="color:var(--color-gray-500);">Em fundo escuro</div>
+          <div class="ffds-flex">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-md">Primário</button>
+            <button class="ffds-btn ffds-btn-outline ffds-btn-md" style="color:white;border-color:white;">Outline</button>
+            <button class="ffds-btn ffds-btn-ghost ffds-btn-md" style="color:var(--color-gray-300);">Ghost</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ FORMS ══════ -->
+  <div id="forms" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">05 · Formulários</div>
+        <h2 class="ffds-section-title">Form Components</h2>
+      </div>
+
+      <div class="ffds-grid-2">
+        <div class="ffds-card">
+          <div class="ffds-label">Inputs de Texto</div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+            <div class="ffds-form-group">
+              <label class="ffds-form-label">Nome completo <span class="ffds-required">*</span></label>
+              <input class="ffds-input" type="text" placeholder="Ex: João da Silva">
+              <span class="ffds-form-hint">Informe o nome como consta no documento.</span>
+            </div>
+            <div class="ffds-form-group">
+              <label class="ffds-form-label">E-mail</label>
+              <div class="ffds-input-wrap">
+                <span class="ffds-input-icon">✉</span>
+                <input class="ffds-input" type="email" placeholder="usuario@farmacia.ufmg.br">
+              </div>
+            </div>
+            <div class="ffds-form-group">
+              <label class="ffds-form-label">Matrícula (erro)</label>
+              <input class="ffds-input ffds-input-error" type="text" value="abc123" placeholder="">
+              <span class="ffds-form-error-msg">⚠ Matrícula inválida. Use somente números.</span>
+            </div>
+            <div class="ffds-form-group">
+              <label class="ffds-form-label">Senha (sucesso)</label>
+              <input class="ffds-input ffds-input-success" type="password" value="••••••••">
+            </div>
+            <div class="ffds-form-group">
+              <label class="ffds-form-label">Mensagem</label>
+              <textarea class="ffds-input" placeholder="Escreva sua mensagem aqui..."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="ffds-card">
+          <div class="ffds-label">Seletores</div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-5);">
+            <div class="ffds-form-group">
+              <label class="ffds-form-label">Departamento</label>
+              <select class="ffds-input">
+                <option>Selecione...</option>
+                <option>Análises Clínicas</option>
+                <option>Farmácia Social</option>
+                <option>Produtos Farmacêuticos</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="ffds-label">Checkboxes</div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-2);">
+                <label class="ffds-check-group"><input type="checkbox" checked><span>Análise Clínica</span></label>
+                <label class="ffds-check-group"><input type="checkbox"><span>Farmacologia</span></label>
+                <label class="ffds-check-group"><input type="checkbox" checked><span>Bioquímica</span></label>
+              </div>
+            </div>
+
+            <div>
+              <div class="ffds-label">Radio Buttons</div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-2);">
+                <label class="ffds-check-group"><input type="radio" name="area" checked><span>Graduação</span></label>
+                <label class="ffds-check-group"><input type="radio" name="area"><span>Pós-Graduação</span></label>
+                <label class="ffds-check-group"><input type="radio" name="area"><span>Extensão</span></label>
+              </div>
+            </div>
+
+            <div>
+              <div class="ffds-label">Toggles</div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-3);">
+                <div class="ffds-toggle-wrap"><label class="ffds-toggle"><input type="checkbox" checked><span
+                      class="ffds-toggle-slider"></span></label><span class="ffds-toggle-label">Notificações por e-mail</span>
+                </div>
+                <div class="ffds-toggle-wrap"><label class="ffds-toggle"><input type="checkbox"><span
+                      class="ffds-toggle-slider"></span></label><span class="ffds-toggle-label">Modo escuro</span></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="ffds-label">Tamanhos de Input</div>
+              <div style="display:flex;flex-direction:column;gap:var(--space-2);">
+                <input class="ffds-input ffds-input-sm" type="text" placeholder="Input pequeno (sm)">
+                <input class="ffds-input" type="text" placeholder="Input padrão (md)">
+                <input class="ffds-input ffds-input-lg" type="text" placeholder="Input grande (lg)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ BADGES ══════ -->
+  <div id="badges" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">06 · Badges &amp; Tags</div>
+        <h2 class="ffds-section-title">Status Indicators</h2>
+      </div>
+      <div class="ffds-card">
+        <div class="ffds-label">Variantes de Badge</div>
+        <div class="ffds-flex-center" style="margin-bottom:var(--space-4);">
+          <span class="ffds-badge ffds-badge-primary">Primária</span>
+          <span class="ffds-badge ffds-badge-secondary">Secundária</span>
+          <span class="ffds-badge ffds-badge-success">Aprovado</span>
+          <span class="ffds-badge ffds-badge-warning">Pendente</span>
+          <span class="ffds-badge ffds-badge-error">Reprovado</span>
+          <span class="ffds-badge ffds-badge-info">Informação</span>
+          <span class="ffds-badge ffds-badge-neutral">Neutro</span>
+        </div>
+        <div class="ffds-label">Com indicador de status</div>
+        <div class="ffds-flex-center">
+          <span class="ffds-badge ffds-badge-success ffds-badge-dot">Ativo</span>
+          <span class="ffds-badge ffds-badge-error ffds-badge-dot">Inativo</span>
+          <span class="ffds-badge ffds-badge-warning ffds-badge-dot">Em revisão</span>
+          <span class="ffds-badge ffds-badge-info ffds-badge-dot">Em andamento</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ ALERTS ══════ -->
+  <div id="alerts" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">07 · Alertas</div>
+        <h2 class="ffds-section-title">Alert Components</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-4);">
+        <div class="ffds-alert ffds-alert-success">
+          <span class="ffds-alert-icon">✓</span>
+          <div class="ffds-alert-content">
+            <div class="ffds-alert-title">Operação realizada com sucesso</div>
+            <p>Seus dados foram salvos e estão disponíveis no sistema.</p>
+          </div>
+        </div>
+        <div class="ffds-alert ffds-alert-warning">
+          <span class="ffds-alert-icon">⚠</span>
+          <div class="ffds-alert-content">
+            <div class="ffds-alert-title">Atenção necessária</div>
+            <p>Sua sessão expira em 10 minutos. Salve seu progresso para não perder alterações.</p>
+          </div>
+        </div>
+        <div class="ffds-alert ffds-alert-error">
+          <span class="ffds-alert-icon">✕</span>
+          <div class="ffds-alert-content">
+            <div class="ffds-alert-title">Erro ao processar a requisição</div>
+            <p>Não foi possível conectar ao servidor. Verifique sua conexão e tente novamente.</p>
+          </div>
+        </div>
+        <div class="ffds-alert ffds-alert-info">
+          <span class="ffds-alert-icon">ℹ</span>
+          <div class="ffds-alert-content">
+            <div class="ffds-alert-title">Sistema em manutenção programada</div>
+            <p>O sistema ficará indisponível dia 15/01 das 22h às 02h para atualização.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ CARDS ══════ -->
+  <div id="cards" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">08 · Cards</div>
+        <h2 class="ffds-section-title">Card Components</h2>
+      </div>
+
+      <div class="ffds-grid-3 ffds-mb-6">
+        <!-- Stat cards -->
+        <div class="ffds-stat-card">
+          <div class="ffds-stat-label">Alunos Matriculados</div>
+          <div class="ffds-stat-value">1.248</div>
+          <div class="ffds-stat-change ffds-stat-up">↑ 4.2% este semestre</div>
+        </div>
+        <div class="ffds-stat-card">
+          <div class="ffds-stat-label">Projetos de Pesquisa</div>
+          <div class="ffds-stat-value">87</div>
+          <div class="ffds-stat-change ffds-stat-up">↑ 12 novos projetos</div>
+        </div>
+        <div class="ffds-stat-card">
+          <div class="ffds-stat-label">Publicações 2024</div>
+          <div class="ffds-stat-value">342</div>
+          <div class="ffds-stat-change ffds-stat-down">↓ 3.1% vs 2023</div>
+        </div>
+      </div>
+
+      <div class="ffds-grid-3">
+        <!-- Default card -->
+        <div class="ffds-ui-card">
+          <div class="ui-card-header">
+            <div class="ui-card-header-icon">⚗</div>
+            <div class="ui-card-title">Laboratório Analítico</div>
+          </div>
+          <div class="ui-card-body">
+            <p class="ffds-body-sm" style="margin-bottom:var(--space-3);">Equipamentos para análise de fármacos e controle
+              de qualidade de medicamentos com tecnologia de ponta.</p>
+            <div class="ffds-flex"><span class="ffds-badge ffds-badge-success">Disponível</span><span
+                class="ffds-badge ffds-badge-neutral">Sala 204</span></div>
+          </div>
+          <div class="ui-card-footer">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-sm">Reservar</button>
+            <button class="ffds-btn ffds-btn-ghost ffds-btn-sm">Ver detalhes</button>
+          </div>
+        </div>
+
+        <!-- Accent card -->
+        <div class="ffds-ui-card ui-card-accent">
+          <div class="ui-card-header">
+            <div class="ui-card-header-icon" style="background:var(--color-primary-20);">📋</div>
+            <div class="ui-card-title">Disciplina em Destaque</div>
+          </div>
+          <div class="ui-card-body">
+            <p class="ffds-body-sm" style="margin-bottom:var(--space-3);">Farmacologia Clínica — Prof. Dr. Carlos Andrade.
+              Turma T02, 2º semestre de 2025.</p>
+            <div class="ffds-progress-wrap">
+              <div class="ffds-progress-header"><span class="ffds-progress-title">Progresso do curso</span><span
+                  class="ffds-progress-pct">68%</span></div>
+              <div class="ffds-progress-track">
+                <div class="ffds-progress-bar" style="width:68%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ui-card-footer">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-sm">Acessar</button>
+          </div>
+        </div>
+
+        <!-- Dark card -->
+        <div class="ffds-ui-card ui-card-dark">
+          <div class="ui-card-header" style="border-color:var(--color-secondary-light);">
+            <div class="ui-card-header-icon" style="background:rgba(242,182,0,0.15);">🔬</div>
+            <div class="ui-card-title">Pesquisa Ativa</div>
+          </div>
+          <div class="ui-card-body">
+            <p style="font-size:var(--text-sm);color:var(--color-gray-400);margin-bottom:var(--space-3);">Síntese de
+              novos compostos anti-inflamatórios derivados de plantas medicinais do cerrado mineiro.</p>
+            <div class="ffds-flex"><span class="ffds-badge ffds-badge-primary">CNPq</span><span class="ffds-badge"
+                style="background:rgba(255,255,255,0.1);color:var(--color-gray-300);">2024–2026</span></div>
+          </div>
+          <div class="ui-card-footer"
+            style="background:var(--color-secondary); border-color:var(--color-secondary-light);">
+            <button class="ffds-btn ffds-btn-primary ffds-btn-sm">Ver projeto</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatars -->
+      <div class="ffds-card ffds-mt-6">
+        <div class="ffds-label">Avatares</div>
+        <div class="ffds-flex-center">
+          <div class="ffds-avatar avatar-xs">JA</div>
+          <div class="ffds-avatar avatar-sm">MS</div>
+          <div class="ffds-avatar avatar-md">CF</div>
+          <div class="ffds-avatar avatar-lg">RP</div>
+          <div class="ffds-avatar avatar-xl">AB</div>
+          <div class="ffds-avatar avatar-md avatar-dark">DK</div>
+          <div class="ffds-avatar avatar-md avatar-ghost">?</div>
+          <div class="ffds-avatar avatar-lg avatar-ring">VL</div>
+        </div>
+
+        <hr class="ffds-divider">
+        <div class="ffds-label">Barras de Progresso</div>
+        <div style="max-width:500px;">
+          <div class="ffds-progress-wrap">
+            <div class="ffds-progress-header"><span class="ffds-progress-title">Conclusão de TCC</span><span
+                class="ffds-progress-pct">85%</span></div>
+            <div class="ffds-progress-track ffds-progress-track-lg">
+              <div class="ffds-progress-bar" style="width:85%;"></div>
+            </div>
+          </div>
+          <div class="ffds-progress-wrap">
+            <div class="ffds-progress-header"><span class="ffds-progress-title">Horas complementares</span><span
+                class="ffds-progress-pct">60%</span></div>
+            <div class="ffds-progress-track">
+              <div class="ffds-progress-bar ffds-progress-bar-dark" style="width:60%;"></div>
+            </div>
+          </div>
+          <div class="ffds-progress-wrap">
+            <div class="ffds-progress-header"><span class="ffds-progress-title">Coleta de dados</span><span
+                class="ffds-progress-pct">100%</span></div>
+            <div class="ffds-progress-track">
+              <div class="ffds-progress-bar ffds-progress-bar-success" style="width:100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ NAVIGATION ══════ -->
+  <div id="navigation" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">09 · Navegação</div>
+        <h2 class="ffds-section-title">Navigation Patterns</h2>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:var(--space-6);">
+        <!-- Top nav -->
+        <div>
+          <div class="ffds-label">Top Navigation Bar</div>
+          <div class="ffds-nav-sample">
+            <div class="nav-sample-bar">
+              <div class="nav-sample-logo">⬡ Farmácia UFMG</div>
+              <ul class="nav-sample-links">
+                <li><a href="#" class="ffds-active">Início</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Pesquisa</a></li>
+                <li><a href="#">Extensão</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+              <div class="nav-sample-actions">
+                <button class="ffds-btn ffds-btn-ghost ffds-btn-sm" style="color:var(--color-gray-300);">Entrar</button>
+                <button class="ffds-btn ffds-btn-primary ffds-btn-sm">Portal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="ffds-card">
+          <div class="ffds-label">Tabs</div>
+          <div class="ffds-tabs">
+            <button class="ffds-tab ffds-active">Perfil</button>
+            <button class="ffds-tab">Disciplinas</button>
+            <button class="ffds-tab">Histórico</button>
+            <button class="ffds-tab">Documentos</button>
+          </div>
+          <p class="ffds-body-sm" style="color:var(--color-gray-400);">Conteúdo da aba selecionada seria exibido aqui.</p>
+        </div>
+
+        <!-- Breadcrumb -->
+        <div class="ffds-card">
+          <div class="ffds-label">Breadcrumb</div>
+          <nav class="ffds-breadcrumb">
+            <a class="breadcrumb-item" href="#">Início</a>
+            <span class="breadcrumb-sep">›</span>
+            <a class="breadcrumb-item" href="#">Pesquisa</a>
+            <span class="breadcrumb-sep">›</span>
+            <a class="breadcrumb-item" href="#">Projetos</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-item current">Projeto CNPq 2024</span>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ DATA ══════ -->
+  <div id="data" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">10 · Dados</div>
+        <h2 class="ffds-section-title">Data Display</h2>
+      </div>
+      <div class="ffds-table-wrap">
+        <table class="ffds-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Disciplina</th>
+              <th>Docente</th>
+              <th>Créditos</th>
+              <th>Status</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>FAR001</code></td>
+              <td><strong style="color:var(--color-secondary-dark);">Farmacologia I</strong></td>
+              <td>Prof. Carlos Andrade</td>
+              <td>4</td>
+              <td><span class="ffds-badge ffds-badge-success">Aprovado</span></td>
+              <td><button class="ffds-btn ffds-btn-ghost ffds-btn-xs">Ver histórico</button></td>
+            </tr>
+            <tr>
+              <td><code>FAR012</code></td>
+              <td><strong style="color:var(--color-secondary-dark);">Análise Clínica</strong></td>
+              <td>Prof.ª Maria Santos</td>
+              <td>6</td>
+              <td><span class="ffds-badge ffds-badge-warning">Em andamento</span></td>
+              <td><button class="ffds-btn ffds-btn-ghost ffds-btn-xs">Acessar</button></td>
+            </tr>
+            <tr>
+              <td><code>FAR028</code></td>
+              <td><strong style="color:var(--color-secondary-dark);">Bioquímica Clínica</strong></td>
+              <td>Prof. Rafael Pinto</td>
+              <td>4</td>
+              <td><span class="ffds-badge ffds-badge-info">Matriculado</span></td>
+              <td><button class="ffds-btn ffds-btn-primary ffds-btn-xs">Acessar</button></td>
+            </tr>
+            <tr>
+              <td><code>FAR045</code></td>
+              <td><strong style="color:var(--color-secondary-dark);">TCC II</strong></td>
+              <td>Prof.ª Ana Lima</td>
+              <td>8</td>
+              <td><span class="ffds-badge ffds-badge-error">Reprovado</span></td>
+              <td><button class="ffds-btn ffds-btn-ghost ffds-btn-xs">Recurso</button></td>
+            </tr>
+            <tr>
+              <td><code>FAR056</code></td>
+              <td><strong style="color:var(--color-secondary-dark);">Estágio Supervisionado</strong></td>
+              <td>Coord. Geral</td>
+              <td>12</td>
+              <td><span class="ffds-badge ffds-badge-neutral">Futuro</span></td>
+              <td><button class="ffds-btn ffds-btn-ghost ffds-btn-xs ffds-btn-disabled" disabled>Indisponível</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ TOKENS REFERENCE ══════ -->
+  <div id="tokens" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">11 · Referência Técnica</div>
+        <h2 class="ffds-section-title">CSS Design Tokens</h2>
+        <p class="ffds-section-desc">Cole este bloco de CSS como base em qualquer projeto para garantir consistência
+          visual com este design system.</p>
+      </div>
+
+      <div class="ffds-card" style="background:var(--color-secondary-dark); color:var(--color-gray-300);">
+        <pre
+          style="font-family:var(--font-mono); font-size:var(--text-xs); line-height:1.8; overflow-x:auto; white-space:pre-wrap;"><span style="color:var(--color-primary);">/* ══ FARMÁCIA UFMG — DESIGN TOKENS ══ */</span>
+:root {
+  <span style="color:var(--color-primary);">/* Primary */</span>
+  --color-primary:        #f2b600;
+  --color-primary-light:  #f7cc4b;
+  --color-primary-dark:   #c99200;
+  --color-primary-10:     rgba(242,182,0,0.10);
+  --color-primary-20:     rgba(242,182,0,0.20);
+
+  <span style="color:var(--color-primary);">/* Secondary */</span>
+  --color-secondary:      #2d2d2d;
+  --color-secondary-light:#444444;
+  --color-secondary-dark: #1a1a1a;
+
+  <span style="color:var(--color-primary);">/* Neutrals (warm gray) */</span>
+  --color-gray-50:  #f9f8f6;  --color-gray-100: #f2f0ec;
+  --color-gray-200: #e4e0d8;  --color-gray-300: #c8c2b6;
+  --color-gray-400: #9e9588;  --color-gray-500: #706860;
+  --color-gray-600: #504840;  --color-gray-700: #3a3028;
+  --color-gray-800: #2d2520;  --color-gray-900: #1a1410;
+
+  <span style="color:var(--color-primary);">/* Semantic */</span>
+  --color-success: #2d7a4f;  --color-success-bg: #edf7f2;
+  --color-warning: #b86a00;  --color-warning-bg: #fff4e0;
+  --color-error:   #b83232;  --color-error-bg:   #fdf0f0;
+  --color-info:    #1a5fa8;  --color-info-bg:    #eef4fd;
+
+  <span style="color:var(--color-primary);">/* Typography */</span>
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'DM Sans', sans-serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+
+  <span style="color:var(--color-primary);">/* Type scale */</span>
+  --text-xs: 0.75rem;   --text-sm: 0.875rem;  --text-base: 1rem;
+  --text-lg: 1.125rem;  --text-xl: 1.25rem;   --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem; --text-4xl: 2.25rem;  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  <span style="color:var(--color-primary);">/* Spacing (4px base) */</span>
+  --space-1: 0.25rem;  --space-2: 0.5rem;   --space-3: 0.75rem;
+  --space-4: 1rem;     --space-5: 1.25rem;  --space-6: 1.5rem;
+  --space-8: 2rem;     --space-10: 2.5rem;  --space-12: 3rem;
+  --space-16: 4rem;    --space-20: 5rem;    --space-24: 6rem;
+
+  <span style="color:var(--color-primary);">/* Border Radius */</span>
+  --radius-sm: 4px;    --radius-md: 8px;    --radius-lg: 12px;
+  --radius-xl: 16px;   --radius-2xl: 24px;  --radius-full: 9999px;
+
+  <span style="color:var(--color-primary);">/* Shadows */</span>
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md:   0 4px 12px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-lg:   0 10px 30px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-xl:   0 20px 50px rgba(0,0,0,0.15), 0 8px 20px rgba(0,0,0,0.10);
+  --shadow-gold: 0 4px 20px rgba(242,182,0,0.30);
+
+  <span style="color:var(--color-primary);">/* Transitions */</span>
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ EMAIL TEMPLATES ══════ -->
+  <div id="email" class="ffds-section">
+    <div class="ffds-container">
+      <div class="ffds-section-header">
+        <div class="ffds-section-tag">12 · Templates de E-mail</div>
+        <h2 class="ffds-section-title">Email Templates</h2>
+        <p class="ffds-section-desc">Templates HTML inline-styled prontos para disparos transacionais e institucionais.
+          Compatíveis com Gmail, Outlook e clientes de e-mail modernos.</p>
+      </div>
+
+      <!-- NOTA TÉCNICA -->
+      <div class="ffds-alert ffds-alert-info" style="margin-bottom:var(--space-8);">
+        <span class="ffds-alert-icon">ℹ</span>
+        <div class="ffds-alert-content">
+          <div class="ffds-alert-title">Boas práticas para e-mail HTML</div>
+          <p>E-mails usam <strong>inline styles</strong> obrigatoriamente — clientes de e-mail ignoram CSS externo e
+            blocos &lt;style&gt;. Largura máxima recomendada: <strong>600px</strong>. Sempre inclua versão em texto
+            puro. Imagens devem ter <code>alt</code> descritivo.</p>
+        </div>
+      </div>
+
+      <!-- TABS PARA ALTERNAR TEMPLATES -->
+      <div style="margin-bottom:var(--space-4);">
+        <div class="ffds-tabs" id="email-tabs">
+          <button class="ffds-tab ffds-active" onclick="showEmail('tpl-notificacao', this)">Notificação</button>
+          <button class="ffds-tab" onclick="showEmail('tpl-boas-vindas', this)">Boas-vindas</button>
+          <button class="ffds-tab" onclick="showEmail('tpl-alerta', this)">Alerta</button>
+          <button class="ffds-tab" onclick="showEmail('tpl-comunicado', this)">Comunicado</button>
+        </div>
+      </div>
+
+      <!-- WRAPPER VISUALIZADOR -->
+      <div class="ffds-grid-2" style="align-items:start; gap:var(--space-6);">
+
+        <!-- PREVIEW PANEL -->
+        <div>
+          <div class="ffds-label">Preview do E-mail</div>
+          <div
+            style="background:#e8e8e8; border-radius:var(--radius-lg); padding:var(--space-6); box-shadow:var(--shadow-md);">
+            <!-- Simulação de cliente de e-mail -->
+            <div
+              style="background:#f0f0f0; border-radius:var(--radius-md) var(--radius-md) 0 0; padding:var(--space-3) var(--space-4); display:flex; align-items:center; gap:var(--space-2); border-bottom:1px solid #d0d0d0;">
+              <div style="width:12px;height:12px;border-radius:50%;background:#ff5f56;"></div>
+              <div style="width:12px;height:12px;border-radius:50%;background:#ffbd2e;"></div>
+              <div style="width:12px;height:12px;border-radius:50%;background:#27c93f;"></div>
+              <div style="margin-left:var(--space-3);font-size:var(--text-xs);color:#888;font-family:var(--font-mono);">
+                Visualizador de E-mail</div>
+            </div>
+            <div id="email-preview-container"
+              style="background:white; border-radius:0 0 var(--radius-md) var(--radius-md); overflow:hidden; max-height:600px; overflow-y:auto;">
+              <iframe id="email-preview" style="width:100%;border:none;min-height:500px;"
+                title="Preview do e-mail"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- CODE PANEL -->
+        <div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:var(--space-2);">
+            <div class="ffds-label" style="margin-bottom:0;">Código HTML (inline styles)</div>
+            <button class="ffds-btn ffds-btn-outline ffds-btn-xs" onclick="copyEmailCode()" id="copy-btn">⎘ Copiar</button>
+          </div>
+          <div
+            style="background:var(--color-secondary-dark); border-radius:var(--radius-lg); padding:var(--space-4); max-height:568px; overflow-y:auto;">
+            <pre id="email-code"
+              style="font-family:var(--font-mono); font-size:11px; line-height:1.7; color:var(--color-gray-300); white-space:pre-wrap; word-break:break-word; margin:0;"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- ESTRUTURA ANOTADA -->
+      <div class="ffds-card ffds-mt-8">
+        <div class="ffds-label">Anatomia do Template</div>
+        <div class="ffds-grid-3">
+          <div>
+            <div
+              style="background:var(--color-primary-10); border:1px solid var(--color-primary); border-radius:var(--radius-md); padding:var(--space-4); margin-bottom:var(--space-3);">
+              <strong style="color:var(--color-primary-dark); font-size:var(--text-sm);">① Header</strong>
+              <p class="ffds-body-sm" style="margin-top:var(--space-1);">Fundo escuro (#1a1a1a) com logo e barra âmbar.
+                Largura 600px, padding 32px.</p>
+              <code>background: #1a1a1a<br>border-bottom: 4px solid #f2b600</code>
+            </div>
+            <div
+              style="background:var(--color-gray-100); border:1px solid var(--color-gray-200); border-radius:var(--radius-md); padding:var(--space-4);">
+              <strong style="color:var(--color-gray-700); font-size:var(--text-sm);">② Hero / Conteúdo</strong>
+              <p class="ffds-body-sm" style="margin-top:var(--space-1);">Fundo branco, padding 40px. Título em Playfair
+                Display ou Georgia. Corpo em Arial 16px, line-height 1.6.</p>
+            </div>
+          </div>
+          <div>
+            <div
+              style="background:rgba(242,182,0,0.08); border:1px solid var(--color-primary); border-radius:var(--radius-md); padding:var(--space-4); margin-bottom:var(--space-3);">
+              <strong style="color:var(--color-primary-dark); font-size:var(--text-sm);">③ CTA (Call to Action)</strong>
+              <p class="ffds-body-sm" style="margin-top:var(--space-1);">Botão centralizado com fundo #f2b600, texto
+                #1a1a1a, border-radius 8px. Largura mínima 200px.</p>
+              <code>background: #f2b600<br>color: #1a1a1a<br>font-weight: bold</code>
+            </div>
+            <div
+              style="background:var(--color-gray-100); border:1px solid var(--color-gray-200); border-radius:var(--radius-md); padding:var(--space-4);">
+              <strong style="color:var(--color-gray-700); font-size:var(--text-sm);">④ Info Box (opcional)</strong>
+              <p class="ffds-body-sm" style="margin-top:var(--space-1);">Box de destaque com borda lateral âmbar para
+                dados ou avisos importantes dentro do e-mail.</p>
+            </div>
+          </div>
+          <div>
+            <div
+              style="background:var(--color-secondary-dark); border-radius:var(--radius-md); padding:var(--space-4); margin-bottom:var(--space-3);">
+              <strong style="color:var(--color-primary); font-size:var(--text-sm);">⑤ Footer</strong>
+              <p class="ffds-body-sm" style="margin-top:var(--space-1); color:var(--color-gray-400);">Fundo #2d2d2d, texto
+                cinza claro #9e9588. Links de descadastro, endereço institucional.</p>
+              <code
+                style="background:rgba(255,255,255,0.05); color:var(--color-gray-400);">font-size: 12px<br>color: #9e9588</code>
+            </div>
+            <div
+              style="background:var(--color-info-bg); border:1px solid #bbd1f0; border-radius:var(--radius-md); padding:var(--space-4);">
+              <strong style="color:var(--color-info); font-size:var(--text-sm);">⚠ Limitações de E-mail</strong>
+              <p class="ffds-body-sm" style="margin-top:var(--space-1); color:#154d8a;">Evite: flexbox, grid, position
+                absolute, fontes customizadas (use Georgia/Arial), background-image em divs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PALETA PARA E-MAIL -->
+      <div class="ffds-card ffds-mt-6">
+        <div class="ffds-label">Cores em Valores Absolutos (para inline styles)</div>
+        <p class="ffds-body-sm" style="margin-bottom:var(--space-4);">Em e-mails, use sempre valores hexadecimais diretos
+          — variáveis CSS não funcionam.</p>
+        <div class="ffds-table-wrap">
+          <table class="ffds-table">
+            <thead>
+              <tr>
+                <th>Token</th>
+                <th>Valor Hex</th>
+                <th>Uso em E-mail</th>
+                <th>Amostra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>--color-primary</code></td>
+                <td><code>#f2b600</code></td>
+                <td>Botões CTA, bordas de destaque, links</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#f2b600;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-secondary-dark</code></td>
+                <td><code>#1a1a1a</code></td>
+                <td>Header, fundo de seção escura</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#1a1a1a;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-secondary</code></td>
+                <td><code>#2d2d2d</code></td>
+                <td>Footer, texto de código</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#2d2d2d;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-gray-800</code></td>
+                <td><code>#2d2520</code></td>
+                <td>Texto principal do corpo</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#2d2520;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-gray-500</code></td>
+                <td><code>#706860</code></td>
+                <td>Texto secundário, metadados</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#706860;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-gray-100</code></td>
+                <td><code>#f2f0ec</code></td>
+                <td>Fundo de seções alternadas, info boxes</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#f2f0ec;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-success</code></td>
+                <td><code>#2d7a4f</code></td>
+                <td>E-mails de confirmação e aprovação</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#2d7a4f;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><code>--color-error</code></td>
+                <td><code>#b83232</code></td>
+                <td>E-mails de alerta e rejeição</td>
+                <td>
+                  <div
+                    style="width:28px;height:28px;background:#b83232;border-radius:4px;border:1px solid rgba(0,0,0,0.1);">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HIDDEN EMAIL TEMPLATE DATA -->
+  <script>
+    const EMAIL_TEMPLATES = {};
+
+    EMAIL_TEMPLATES['tpl-notificacao'] = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificação — Farmácia UFMG</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f0ec;font-family:Arial,Helvetica,sans-serif;">
+
+  <!-- Wrapper -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f2f0ec;padding:32px 16px;">
+    <tr><td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+        <!-- HEADER -->
+        <tr><td style="background-color:#1a1a1a;border-radius:12px 12px 0 0;padding:28px 40px;border-bottom:4px solid #f2b600;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <span style="font-family:Georgia,serif;font-size:22px;font-weight:700;color:#f2b600;letter-spacing:-0.01em;">⬡ Farmácia UFMG</span>
+                <div style="font-size:11px;color:#706860;margin-top:4px;letter-spacing:0.08em;text-transform:uppercase;">Faculdade de Farmácia</div>
+              </td>
+              <td align="right">
+                <span style="background-color:#f2b600;color:#1a1a1a;font-size:11px;font-weight:700;padding:4px 12px;border-radius:99px;letter-spacing:0.06em;text-transform:uppercase;">Notificação</span>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- BODY -->
+        <tr><td style="background-color:#ffffff;padding:40px;">
+
+          <!-- Greeting -->
+          <p style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:#1a1a10;margin:0 0 8px 0;line-height:1.2;">Olá, João da Silva</p>
+          <p style="font-size:14px;color:#706860;margin:0 0 28px 0;">Segunda-feira, 23 de janeiro de 2025</p>
+
+          <!-- Divider -->
+          <div style="height:3px;background:linear-gradient(to right,#f2b600,#f7cc4b,#f2f0ec);border-radius:2px;margin-bottom:28px;"></div>
+
+          <!-- Message -->
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 16px 0;">
+            Você tem uma nova <strong>atualização de matrícula</strong> disponível no Portal do Aluno. Sua inscrição na disciplina <strong>Farmacologia Clínica (FAR028)</strong> foi confirmada com sucesso para o 2º semestre de 2025.
+          </p>
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 28px 0;">
+            As aulas terão início em <strong>04 de agosto de 2025</strong>, às <strong>08h00</strong>, no Bloco A, Sala 204.
+          </p>
+
+          <!-- Info Box -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:32px;">
+            <tr><td style="background-color:#f9f8f6;border-left:4px solid #f2b600;border-radius:0 8px 8px 0;padding:20px 24px;">
+              <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#c99200;margin:0 0 12px 0;">Detalhes da Matrícula</p>
+              <table role="presentation" cellpadding="0" cellspacing="0">
+                <tr><td style="font-size:14px;color:#706860;padding:3px 0;width:130px;">Disciplina:</td><td style="font-size:14px;color:#2d2520;font-weight:600;padding:3px 0;">Farmacologia Clínica</td></tr>
+                <tr><td style="font-size:14px;color:#706860;padding:3px 0;">Código:</td><td style="font-size:14px;color:#2d2520;font-weight:600;padding:3px 0;">FAR028</td></tr>
+                <tr><td style="font-size:14px;color:#706860;padding:3px 0;">Turma:</td><td style="font-size:14px;color:#2d2520;font-weight:600;padding:3px 0;">T02 — 2º Semestre 2025</td></tr>
+                <tr><td style="font-size:14px;color:#706860;padding:3px 0;">Docente:</td><td style="font-size:14px;color:#2d2520;font-weight:600;padding:3px 0;">Prof. Dr. Rafael Pinto</td></tr>
+                <tr><td style="font-size:14px;color:#706860;padding:3px 0;">Créditos:</td><td style="font-size:14px;color:#2d2520;font-weight:600;padding:3px 0;">4 créditos</td></tr>
+              </table>
+            </td></tr>
+          </table>
+
+          <!-- CTA -->
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 32px;">
+            <tr><td align="center" style="border-radius:8px;background-color:#f2b600;box-shadow:0 4px 14px rgba(242,182,0,0.35);">
+              <a href="#" style="display:inline-block;padding:14px 36px;font-size:15px;font-weight:700;color:#1a1a1a;text-decoration:none;letter-spacing:0.01em;">Acessar Portal do Aluno →</a>
+            </td></tr>
+          </table>
+
+          <p style="font-size:13px;color:#9e9588;text-align:center;margin:0;">
+            Ou acesse: <a href="#" style="color:#c99200;text-decoration:underline;">portal.farmacia.ufmg.br</a>
+          </p>
+        </td></tr>
+
+        <!-- FOOTER -->
+        <tr><td style="background-color:#2d2d2d;border-radius:0 0 12px 12px;padding:28px 40px;">
+          <p style="font-size:12px;color:#706860;margin:0 0 8px 0;text-align:center;">
+            Faculdade de Farmácia — Universidade Federal de Minas Gerais<br>
+            Av. Antônio Carlos, 6627 — Pampulha, Belo Horizonte — MG, 31270-901
+          </p>
+          <p style="font-size:11px;color:#504840;text-align:center;margin:0;">
+            Este é um e-mail automático. Não responda diretamente. &nbsp;|&nbsp;
+            <a href="#" style="color:#706860;text-decoration:underline;">Descadastrar</a>
+          </p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+  </div>
+</body>
+</html>`;
+
+    EMAIL_TEMPLATES['tpl-boas-vindas'] = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo(a) — Farmácia UFMG</title>
+</head>
+<body style="margin:0;padding:0;background-color:#1a1a1a;font-family:Arial,Helvetica,sans-serif;">
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#1a1a1a;padding:32px 16px;">
+    <tr><td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+        <!-- HERO HEADER -->
+        <tr><td style="background-color:#1a1a1a;border-radius:12px 12px 0 0;padding:48px 40px 40px;text-align:center;border-bottom:3px solid #f2b600;">
+          <div style="font-size:40px;margin-bottom:12px;">⬡</div>
+          <h1 style="font-family:Georgia,serif;font-size:32px;font-weight:700;color:#ffffff;margin:0 0 8px 0;line-height:1.2;">Bem-vindo(a) à<br><span style="color:#f2b600;">Farmácia UFMG</span></h1>
+          <p style="font-size:15px;color:#9e9588;margin:0;">Sua jornada acadêmica começa agora</p>
+        </td></tr>
+
+        <!-- BODY -->
+        <tr><td style="background-color:#ffffff;padding:40px;">
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 20px 0;">
+            Olá, <strong>Maria Fernanda</strong>! É com grande satisfação que recebemos você como parte da nossa comunidade acadêmica. Sua matrícula foi oficializada com sucesso no curso de <strong>Farmácia</strong>.
+          </p>
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 32px 0;">
+            Preparamos tudo para que você comece da melhor forma. Abaixo estão os seus primeiros passos:
+          </p>
+
+          <!-- Steps -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:32px;">
+            <tr>
+              <td style="padding:14px 0;border-bottom:1px solid #e4e0d8;vertical-align:top;">
+                <table role="presentation" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="width:44px;height:44px;background-color:#f2b600;border-radius:50%;text-align:center;vertical-align:middle;font-size:18px;font-weight:700;color:#1a1a1a;">1</td>
+                    <td style="padding-left:16px;">
+                      <strong style="font-size:15px;color:#1a1a1a;display:block;margin-bottom:3px;">Acesse o Portal do Aluno</strong>
+                      <span style="font-size:13px;color:#706860;">Configure sua senha e complete seu perfil acadêmico.</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:14px 0;border-bottom:1px solid #e4e0d8;vertical-align:top;">
+                <table role="presentation" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="width:44px;height:44px;background-color:#2d2d2d;border-radius:50%;text-align:center;vertical-align:middle;font-size:18px;font-weight:700;color:#f2b600;">2</td>
+                    <td style="padding-left:16px;">
+                      <strong style="font-size:15px;color:#1a1a1a;display:block;margin-bottom:3px;">Faça a matrícula nas disciplinas</strong>
+                      <span style="font-size:13px;color:#706860;">Prazo: até 01 de agosto. Consulte o grade curricular recomendado.</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:14px 0;vertical-align:top;">
+                <table role="presentation" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td style="width:44px;height:44px;background-color:#f2f0ec;border:2px solid #f2b600;border-radius:50%;text-align:center;vertical-align:middle;font-size:18px;font-weight:700;color:#c99200;">3</td>
+                    <td style="padding-left:16px;">
+                      <strong style="font-size:15px;color:#1a1a1a;display:block;margin-bottom:3px;">Compareça à Semana de Recepção</strong>
+                      <span style="font-size:13px;color:#706860;">04–08 de agosto — Bloco Principal, Piso Térreo. Presença obrigatória.</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+          <!-- CTA -->
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 24px;">
+            <tr><td align="center" style="border-radius:8px;background-color:#f2b600;box-shadow:0 4px 14px rgba(242,182,0,0.35);">
+              <a href="#" style="display:inline-block;padding:14px 40px;font-size:15px;font-weight:700;color:#1a1a1a;text-decoration:none;">Acessar meu Portal →</a>
+            </td></tr>
+          </table>
+
+          <p style="font-size:13px;color:#9e9588;text-align:center;margin:0 0 32px 0;">
+            Dúvidas? <a href="mailto:secretaria@farmacia.ufmg.br" style="color:#c99200;">secretaria@farmacia.ufmg.br</a>
+          </p>
+
+          <div style="background-color:#f9f8f6;border-radius:8px;padding:20px 24px;text-align:center;">
+            <p style="font-size:13px;color:#706860;margin:0;font-style:italic;">"A farmácia é a ciência que une a natureza ao cuidado humano."</p>
+            <p style="font-size:12px;color:#9e9588;margin:8px 0 0 0;">— Corpo docente, Farmácia UFMG</p>
+          </div>
+        </td></tr>
+
+        <!-- FOOTER -->
+        <tr><td style="background-color:#2d2d2d;border-radius:0 0 12px 12px;padding:28px 40px;">
+          <p style="font-size:12px;color:#706860;margin:0 0 8px 0;text-align:center;">
+            Faculdade de Farmácia — Universidade Federal de Minas Gerais<br>
+            Av. Antônio Carlos, 6627 — Pampulha, Belo Horizonte — MG, 31270-901
+          </p>
+          <p style="font-size:11px;color:#504840;text-align:center;margin:0;">
+            Você recebeu este e-mail por ser novo(a) aluno(a). &nbsp;|&nbsp;
+            <a href="#" style="color:#706860;text-decoration:underline;">Descadastrar</a>
+          </p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+  </div>
+</body>
+</html>`;
+
+    EMAIL_TEMPLATES['tpl-alerta'] = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alerta Importante — Farmácia UFMG</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f0ec;font-family:Arial,Helvetica,sans-serif;">
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f2f0ec;padding:32px 16px;">
+    <tr><td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+        <!-- HEADER COM ALERTA -->
+        <tr><td style="background-color:#1a1a1a;border-radius:12px 12px 0 0;padding:24px 40px;border-bottom:4px solid #b83232;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td><span style="font-family:Georgia,serif;font-size:20px;font-weight:700;color:#f2b600;">⬡ Farmácia UFMG</span></td>
+              <td align="right"><span style="background-color:#b83232;color:#ffffff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:99px;letter-spacing:0.06em;text-transform:uppercase;">⚠ Urgente</span></td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- ALERT BANNER -->
+        <tr><td style="background-color:#fdf0f0;border-left:0;border-right:0;padding:20px 40px;border-bottom:1px solid #f0bfbf;">
+          <p style="font-size:13px;font-weight:700;color:#b83232;margin:0;letter-spacing:0.06em;text-transform:uppercase;">⚠ &nbsp;Pendência Acadêmica Identificada</p>
+        </td></tr>
+
+        <!-- BODY -->
+        <tr><td style="background-color:#ffffff;padding:40px;">
+          <p style="font-family:Georgia,serif;font-size:22px;font-weight:700;color:#1a1a10;margin:0 0 20px 0;line-height:1.3;">Documentação pendente detectada no seu cadastro</p>
+
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 24px 0;">
+            Identificamos que os documentos abaixo ainda não foram enviados ao sistema. O prazo final para regularização é <strong style="color:#b83232;">15 de fevereiro de 2025</strong>. Após essa data, sua matrícula poderá ser cancelada.
+          </p>
+
+          <!-- Pendências -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;background-color:#fdf0f0;border-radius:8px;border:1px solid #f0bfbf;">
+            <tr><td style="padding:16px 20px;border-bottom:1px solid #f0bfbf;">
+              <p style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#b83232;margin:0 0 12px 0;">Documentos Pendentes</p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                <tr><td style="padding:6px 0;font-size:14px;color:#2d2520;">✕ &nbsp;Histórico Escolar do Ensino Médio</td><td align="right"><span style="font-size:11px;background-color:#b83232;color:white;padding:2px 8px;border-radius:99px;">Obrigatório</span></td></tr>
+                <tr><td style="padding:6px 0;font-size:14px;color:#2d2520;">✕ &nbsp;Certidão de Nascimento ou RG</td><td align="right"><span style="font-size:11px;background-color:#b83232;color:white;padding:2px 8px;border-radius:99px;">Obrigatório</span></td></tr>
+                <tr><td style="padding:6px 0;font-size:14px;color:#706860;">✓ &nbsp;Comprovante de Residência</td><td align="right"><span style="font-size:11px;background-color:#2d7a4f;color:white;padding:2px 8px;border-radius:99px;">Entregue</span></td></tr>
+              </table>
+            </td></tr>
+            <tr><td style="padding:12px 20px;">
+              <p style="font-size:12px;color:#706860;margin:0;">Formatos aceitos: PDF, JPG ou PNG. Tamanho máximo: 5MB por arquivo.</p>
+            </td></tr>
+          </table>
+
+          <!-- CTA -->
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 20px;">
+            <tr><td align="center" style="border-radius:8px;background-color:#b83232;">
+              <a href="#" style="display:inline-block;padding:14px 36px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;">Enviar Documentos Agora →</a>
+            </td></tr>
+          </table>
+
+          <p style="font-size:13px;color:#9e9588;text-align:center;margin:0 0 28px 0;">
+            Dúvidas? Contate a secretaria: <a href="mailto:secretaria@farmacia.ufmg.br" style="color:#c99200;">secretaria@farmacia.ufmg.br</a>
+          </p>
+
+          <!-- Info box -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+            <tr><td style="background-color:#f9f8f6;border-left:4px solid #f2b600;border-radius:0 8px 8px 0;padding:16px 20px;">
+              <p style="font-size:13px;color:#504840;margin:0;line-height:1.6;">
+                <strong style="color:#c99200;">Horário de atendimento:</strong> Segunda a sexta, das 08h às 17h.<br>
+                Presencial: Bloco A, Sala 101 · (31) 3409-0000
+              </p>
+            </td></tr>
+          </table>
+        </td></tr>
+
+        <!-- FOOTER -->
+        <tr><td style="background-color:#2d2d2d;border-radius:0 0 12px 12px;padding:28px 40px;">
+          <p style="font-size:12px;color:#706860;margin:0 0 8px 0;text-align:center;">
+            Faculdade de Farmácia — Universidade Federal de Minas Gerais<br>
+            Av. Antônio Carlos, 6627 — Pampulha, Belo Horizonte — MG, 31270-901
+          </p>
+          <p style="font-size:11px;color:#504840;text-align:center;margin:0;">
+            E-mail automático do sistema acadêmico. &nbsp;|&nbsp;
+            <a href="#" style="color:#706860;text-decoration:underline;">Descadastrar</a>
+          </p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+  </div>
+</body>
+</html>`;
+
+    EMAIL_TEMPLATES['tpl-comunicado'] = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunicado — Farmácia UFMG</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f2f0ec;font-family:Arial,Helvetica,sans-serif;">
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f2f0ec;padding:32px 16px;">
+    <tr><td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+        <!-- HEADER -->
+        <tr><td style="background-color:#1a1a1a;border-radius:12px 12px 0 0;padding:28px 40px;border-bottom:4px solid #f2b600;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>
+                <span style="font-family:Georgia,serif;font-size:22px;font-weight:700;color:#f2b600;">⬡ Farmácia UFMG</span>
+                <div style="font-size:11px;color:#706860;margin-top:4px;letter-spacing:0.08em;text-transform:uppercase;">Comunicado Oficial</div>
+              </td>
+              <td align="right">
+                <span style="font-size:12px;color:#9e9588;">23 jan 2025</span>
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- BODY -->
+        <tr><td style="background-color:#ffffff;padding:40px;">
+
+          <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#c99200;margin:0 0 12px 0;">Calendário Acadêmico</p>
+          <h1 style="font-family:Georgia,serif;font-size:26px;font-weight:700;color:#1a1a10;margin:0 0 16px 0;line-height:1.3;">Alterações no Calendário do 2º Semestre de 2025</h1>
+
+          <div style="height:3px;background-color:#f2b600;border-radius:2px;margin-bottom:24px;width:60px;"></div>
+
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 20px 0;">
+            Prezados discentes e docentes, informamos que o Colegiado da Faculdade de Farmácia aprovou alterações no calendário acadêmico do 2º semestre de 2025 em reunião realizada em 20 de janeiro.
+          </p>
+
+          <!-- Tabela de datas -->
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:28px;border-radius:8px;overflow:hidden;border:1px solid #e4e0d8;">
+            <tr style="background-color:#1a1a1a;">
+              <td style="padding:12px 20px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#f2b600;width:45%;">Evento</td>
+              <td style="padding:12px 20px;font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#f2b600;">Data</td>
+            </tr>
+            <tr style="background-color:#ffffff;">
+              <td style="padding:12px 20px;font-size:14px;color:#2d2520;border-bottom:1px solid #f2f0ec;">Início do semestre</td>
+              <td style="padding:12px 20px;font-size:14px;font-weight:600;color:#2d2520;border-bottom:1px solid #f2f0ec;">04 ago 2025</td>
+            </tr>
+            <tr style="background-color:#f9f8f6;">
+              <td style="padding:12px 20px;font-size:14px;color:#2d2520;border-bottom:1px solid #f2f0ec;">Prazo de trancamento</td>
+              <td style="padding:12px 20px;font-size:14px;font-weight:600;color:#2d2520;border-bottom:1px solid #f2f0ec;">29 ago 2025</td>
+            </tr>
+            <tr style="background-color:#ffffff;">
+              <td style="padding:12px 20px;font-size:14px;color:#2d2520;border-bottom:1px solid #f2f0ec;">Semana de Provas — P1</td>
+              <td style="padding:12px 20px;font-size:14px;font-weight:600;color:#2d2520;border-bottom:1px solid #f2f0ec;">06–10 out 2025</td>
+            </tr>
+            <tr style="background-color:#f9f8f6;">
+              <td style="padding:12px 20px;font-size:14px;color:#2d2520;border-bottom:1px solid #f2f0ec;">Recesso de novembro</td>
+              <td style="padding:12px 20px;font-size:14px;font-weight:600;color:#2d2520;border-bottom:1px solid #f2f0ec;"><span style="color:#b83232;font-weight:700;">17–21 nov 2025 ✦ novo</span></td>
+            </tr>
+            <tr style="background-color:#ffffff;">
+              <td style="padding:12px 20px;font-size:14px;color:#2d2520;">Encerramento do semestre</td>
+              <td style="padding:12px 20px;font-size:14px;font-weight:600;color:#2d2520;">19 dez 2025</td>
+            </tr>
+          </table>
+
+          <p style="font-size:16px;color:#2d2520;line-height:1.7;margin:0 0 28px 0;">
+            O recesso de novembro foi incluído em substituição ao ponto facultativo anteriormente previsto. As aulas serão repostas nos dias 06 e 07 de dezembro conforme planejamento de cada departamento.
+          </p>
+
+          <!-- CTA -->
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto 20px;">
+            <tr><td align="center" style="border-radius:8px;background-color:#f2b600;box-shadow:0 4px 14px rgba(242,182,0,0.35);">
+              <a href="#" style="display:inline-block;padding:14px 36px;font-size:15px;font-weight:700;color:#1a1a1a;text-decoration:none;">Ver Calendário Completo →</a>
+            </td></tr>
+          </table>
+
+          <p style="font-size:13px;color:#9e9588;text-align:center;margin:0 0 28px 0;">
+            Dúvidas: <a href="mailto:secretaria@farmacia.ufmg.br" style="color:#c99200;">secretaria@farmacia.ufmg.br</a>
+          </p>
+
+          <!-- Assinatura -->
+          <div style="border-top:1px solid #e4e0d8;padding-top:20px;">
+            <p style="font-size:14px;color:#2d2520;margin:0 0 4px 0;font-weight:600;">Profa. Dra. Ana Carolina Rezende</p>
+            <p style="font-size:13px;color:#706860;margin:0;">Diretora da Faculdade de Farmácia — UFMG</p>
+          </div>
+        </td></tr>
+
+        <!-- FOOTER -->
+        <tr><td style="background-color:#2d2d2d;border-radius:0 0 12px 12px;padding:28px 40px;">
+          <p style="font-size:12px;color:#706860;margin:0 0 8px 0;text-align:center;">
+            Faculdade de Farmácia — Universidade Federal de Minas Gerais<br>
+            Av. Antônio Carlos, 6627 — Pampulha, Belo Horizonte — MG, 31270-901
+          </p>
+          <p style="font-size:11px;color:#504840;text-align:center;margin:0;">
+            Comunicado oficial — não responda este e-mail. &nbsp;|&nbsp;
+            <a href="#" style="color:#706860;text-decoration:underline;">Descadastrar</a>
+          </p>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+  </div>
+</body>
+</html>`;
+
+    // ── Init ──
+    function showEmail(id, tabEl) {
+      // update tabs
+      document.querySelectorAll('#email-tabs .tab').forEach(t => t.classList.remove('active'));
+      tabEl.classList.add('active');
+
+      const html = EMAIL_TEMPLATES[id];
+      // update preview
+      const iframe = document.getElementById('email-preview');
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      doc.open(); doc.write(html); doc.close();
+      // update code
+      document.getElementById('email-code').textContent = html;
+    }
+
+    function copyEmailCode() {
+      const code = document.getElementById('email-code').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('copy-btn');
+        btn.textContent = '✓ Copiado!';
+        setTimeout(() => btn.textContent = '⎘ Copiar', 2000);
+      });
+    }
+
+    // Load first template on page ready
+    window.addEventListener('load', () => {
+      const firstTab = document.querySelector('#email-tabs .tab');
+      if (firstTab) showEmail('tpl-notificacao', firstTab);
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <div class="ffds-footer">
+    <p><strong>Design System — Farmácia UFMG</strong></p>
+    <p style="margin-top:var(--space-2);">Cor Primária <strong>#f2b600</strong> · Secundária <strong>#2d2d2d</strong> ·
+      Playfair Display + DM Sans</p>
+  </div>
+
+  </div>
+</body>
+
+</html>

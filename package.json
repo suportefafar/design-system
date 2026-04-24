@@ -1,0 +1,20 @@
+{
+  "name": "farmacia-ds",
+  "version": "2025.04.1",
+  "description": "Farmácia UFMG Design System Assets",
+  "main": "dist/latest/farmacia-ds.min.js",
+  "scripts": {
+    "build:css": "postcss src/farmacia-ds.css -o dist/v2025.04/farmacia-ds.min.css",
+    "build:js": "terser src/farmacia-ds.js -o dist/v2025.04/farmacia-ds.min.js -c -m",
+    "build:fonts": "mkdir -p dist/latest/fonts dist/v2025.04/fonts && cp fonts/* dist/v2025.04/fonts/ || true",
+    "build:symlinks": "rm -rf dist/latest/* && cp -r dist/v2025.04/* dist/latest/",
+    "build": "mkdir -p dist/v2025.04 dist/latest && npm run build:css && npm run build:js && npm run build:fonts && npm run build:symlinks"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "terser": "^5.29.1"
+  }
+}
