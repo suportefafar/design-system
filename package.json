@@ -10,11 +10,10 @@
     "build:symlinks": "rm -rf dist/latest/* && cp -r dist/v2025.04/* dist/latest/",
     "build": "mkdir -p dist/v2025.04 dist/latest && npm run build:css && npm run build:js && npm run build:fonts && npm run build:symlinks"
   },
-  "dependencies": {},
   "devDependencies": {
     "cssnano": "^6.0.3",
     "postcss": "^8.4.35",
-    "postcss-cli": "^11.0.0",
+    "postcss-cli": "^11.0.1",
     "terser": "^5.29.1"
   }
 }
