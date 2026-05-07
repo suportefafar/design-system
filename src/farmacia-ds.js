@@ -1,6 +1,8 @@
+import { createIcons, icons } from 'lucide';
+
 /**
  * Farmácia UFMG Design System
- * Version 2025.04
+ * Version 2026.05.06
  */
 
 const FFDS = {
@@ -9,7 +11,9 @@ const FFDS = {
    */
   init() {
     this.initDropdowns();
-    console.log("Farmácia UFMG Design System loaded.");
+    this.initSidebar();
+    createIcons({ icons });
+    console.log("Farmácia UFMG Design System v2026.05.06 loaded.");
   },
 
   /**
@@ -26,13 +30,37 @@ const FFDS = {
   },
 
   /**
-   * Toggles sidebar visibility on mobile
+   * Toggles sidebar visibility
    */
   toggleSidebar() {
-    const sidebar = document.querySelector('.ffds-sidebar');
-    const overlay = document.querySelector('.ffds-sidebar-overlay');
-    if (sidebar) sidebar.classList.toggle('ffds-open');
-    if (overlay) overlay.classList.toggle('ffds-show');
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('.sidebar-overlay');
+    
+    if (window.innerWidth < 768) {
+      // Mobile drawer toggle
+      if (sidebar) sidebar.classList.toggle('show');
+      if (overlay) overlay.classList.toggle('show');
+    } else {
+      // Desktop collapse toggle
+      if (sidebar) sidebar.classList.toggle('sidebar-collapsed');
+    }
+  },
+
+  /**
+   * Initializes sidebar and responsive listeners
+   */
+  initSidebar() {
+    // Add click listeners to overlays
+    document.addEventListener('click', (e) => {
+      if (e.target.matches('.sidebar-overlay')) {
+        this.toggleSidebar();
+      }
+      
+      // Close sidebar when clicking links on mobile
+      if (window.innerWidth < 768 && e.target.closest('.sidebar-link')) {
+        this.toggleSidebar();
+      }
+    });
   },
 
   /**
@@ -62,6 +90,9 @@ const FFDS = {
     });
   }
 };
+
+FFDS.createIcons = createIcons;
+FFDS.icons = icons;
 
 window.FFDS = FFDS;
 

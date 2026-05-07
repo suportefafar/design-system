@@ -1,0 +1,27 @@
+/* ══════════════════════════════════════════
+   UTILITIES — BORDERS & RADIUS
+   ══════════════════════════════════════════ */
+
+.border { border: 1px solid var(--border-color) !important; }
+.border-0 { border: 0 !important; }
+.border-top { border-top: 1px solid var(--border-color) !important; }
+.border-bottom { border-bottom: 1px solid var(--border-color) !important; }
+.border-start { border-left: 1px solid var(--border-color) !important; }
+.border-end { border-right: 1px solid var(--border-color) !important; }
+
+.border-primary { border-color: var(--color-primary) !important; }
+.border-secondary { border-color: var(--color-secondary) !important; }
+.border-white { border-color: var(--color-white) !important; }
+
+/* Border Radius */
+.rounded { border-radius: var(--radius-md) !important; }
+.rounded-0 { border-radius: 0 !important; }
+.rounded-sm { border-radius: var(--radius-sm) !important; }
+.rounded-lg { border-radius: var(--radius-lg) !important; }
+.rounded-circle { border-radius: 50% !important; }
+.rounded-pill { border-radius: var(--radius-full) !important; }
+
+/* Shadow */
+.shadow-sm { box-shadow: var(--shadow-sm) !important; }
+.shadow { box-shadow: var(--shadow-md) !important; }
+.shadow-none { box-shadow: none !important; }

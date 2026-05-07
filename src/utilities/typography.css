@@ -1,0 +1,42 @@
+/* ══════════════════════════════════════════
+   UTILITIES — TYPOGRAPHY
+   ══════════════════════════════════════════ */
+
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+
+.text-lowercase { text-transform: lowercase !important; }
+.text-uppercase { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+
+.fw-light { font-weight: 300 !important; }
+.fw-normal { font-weight: 400 !important; }
+.fw-medium { font-weight: 500 !important; }
+.fw-semibold { font-weight: 600 !important; }
+.fw-bold { font-weight: 700 !important; }
+
+.fst-italic { font-style: italic !important; }
+.fst-normal { font-style: normal !important; }
+
+.text-decoration-none { text-decoration: none !important; }
+.text-decoration-underline { text-decoration: underline !important; }
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.font-display { font-family: var(--font-display) !important; }
+.font-body { font-family: var(--font-body) !important; }
+.font-mono { font-family: var(--font-mono) !important; }
+
+/* Font sizes */
+.fs-1 { font-size: var(--text-6xl) !important; }
+.fs-2 { font-size: var(--text-5xl) !important; }
+.fs-3 { font-size: var(--text-4xl) !important; }
+.fs-4 { font-size: var(--text-3xl) !important; }
+.fs-5 { font-size: var(--text-2xl) !important; }
+.fs-6 { font-size: var(--text-xl) !important; }
+.small { font-size: var(--text-sm) !important; }

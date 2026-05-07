@@ -1,0 +1,21 @@
+/* ══════════════════════════════════════════
+   APP LAYOUT (FULLSCREEN FLEX)
+   ══════════════════════════════════════════ */
+
+.ffds-fullscreen-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ffds-viewport {
+  flex-grow: 1;
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

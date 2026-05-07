@@ -1,0 +1,124 @@
+/* ══════════════════════════════════════════
+   SIDEBAR (App Layout Style)
+   ══════════════════════════════════════════ */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--color-white);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: width var(--transition-base), left var(--transition-base);
+  z-index: var(--z-offcanvas, 1040); /* Higher than fixed-top */
+  overflow-x: hidden;
+}
+
+.sidebar-collapsed {
+  width: 72px;
+}
+
+.sidebar-nav {
+  padding: var(--space-2);
+  list-style: none;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-gray-700);
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-1);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.sidebar-link:hover, 
+.sidebar-link.active {
+  background-color: var(--color-primary-10);
+  color: var(--color-primary-dark);
+}
+
+.sidebar-link i,
+.sidebar-link svg {
+  margin-right: var(--space-4);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.sidebar-collapsed .sidebar-link span {
+  display: none;
+}
+
+.sidebar-collapsed .sidebar-link {
+  justify-content: center;
+  padding: var(--space-3);
+}
+
+.sidebar-collapsed .sidebar-link i,
+.sidebar-collapsed .sidebar-link svg {
+  margin-right: 0;
+}
+
+/* Content Area */
+.content-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+  background-color: var(--color-gray-50);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    left: -260px;
+    top: 0; /* Cover full screen */
+    bottom: 0;
+    width: 260px;
+    height: 100vh;
+  }
+  
+  .sidebar.show {
+    left: 0;
+    box-shadow: var(--shadow-md);
+  }
+  
+  .sidebar-collapsed {
+    width: 260px; /* Reset on mobile */
+  }
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: none;
+  z-index: var(--z-offcanvas-backdrop, 1035);
+}
+
+.sidebar-overlay.show {
+  display: block;
+}

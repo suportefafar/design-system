@@ -1,0 +1,108 @@
+/* ══════════════════════════════════════════
+   BUTTONS (Minimalist)
+   ══════════════════════════════════════════ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-base);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+  text-decoration: none;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--color-primary-20);
+}
+
+.btn:disabled,
+.btn.disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* Variants */
+.btn-primary {
+  color: var(--color-secondary-dark);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-secondary-dark);
+  border-color: var(--color-secondary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-dark);
+}
+
+.btn-ghost {
+  color: var(--color-gray-700);
+  border-color: transparent;
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-gray-100);
+}
+
+.btn-danger {
+  color: var(--color-white);
+  background-color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.btn-danger:hover {
+  background-color: #a02b2b;
+}
+
+/* Sizes */
+.btn-sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.btn-lg {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-lg);
+}
+
+/* Icon button */
+.btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
