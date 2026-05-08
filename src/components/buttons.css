@@ -89,6 +89,39 @@
   background-color: #a02b2b;
 }
 
+.btn-success {
+  color: var(--color-white);
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.btn-success:hover {
+  background-color: #215c3b;
+  border-color: #215c3b;
+}
+
+.btn-warning {
+  color: var(--color-secondary-dark);
+  background-color: var(--color-warning);
+  border-color: var(--color-warning);
+}
+
+.btn-warning:hover {
+  background-color: #9e5b00;
+  border-color: #9e5b00;
+}
+
+.btn-info {
+  color: var(--color-white);
+  background-color: var(--color-info);
+  border-color: var(--color-info);
+}
+
+.btn-info:hover {
+  background-color: #144880;
+  border-color: #144880;
+}
+
 /* Sizes */
 .btn-sm {
   padding: var(--space-1) var(--space-3);
