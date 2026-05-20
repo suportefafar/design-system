@@ -2,7 +2,7 @@
    CARDS (Minimalist / Rails-style)
    ══════════════════════════════════════════ */
 
-.card {
+.ffds-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,25 +15,25 @@
   overflow: hidden;
 }
 
-.card-body {
+.ffds-card-body {
   flex: 1 1 auto;
   padding: var(--space-6);
 }
 
-.card-header {
+.ffds-card-header {
   padding: var(--space-4) var(--space-6);
   margin-bottom: 0;
   background-color: var(--color-gray-50);
   border-bottom: 1px solid var(--border-color);
 }
 
-.card-footer {
+.ffds-card-footer {
   padding: var(--space-4) var(--space-6);
   background-color: var(--color-gray-50);
   border-top: 1px solid var(--border-color);
 }
 
-.card-title {
+.ffds-card-title {
   margin-bottom: var(--space-3);
   font-family: var(--font-display);
   font-size: var(--text-xl);
@@ -42,35 +42,35 @@
 }
 
 /* Variants */
-.card-accent {
+.ffds-card-accent {
   border-top: 4px solid var(--color-primary);
 }
 
-.card-dark {
+.ffds-card-dark {
   background-color: var(--color-secondary-dark);
   color: var(--color-white);
   border-color: var(--color-secondary-light);
 }
 
-.card-dark .card-header,
-.card-dark .card-footer {
+.ffds-card-dark .ffds-card-header,
+.ffds-card-dark .ffds-card-footer {
   background-color: var(--color-secondary);
   border-color: var(--color-secondary-light);
 }
 
-.card-dark .card-title {
+.ffds-card-dark .ffds-card-title {
   color: var(--color-white);
 }
 
 /* Stat card (Simplified) */
-.stat-card {
+.ffds-stat-card {
   padding: var(--space-4);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   background-color: var(--color-white);
 }
 
-.stat-label {
+.ffds-stat-label {
   font-size: var(--text-xs);
   font-weight: 600;
   text-transform: uppercase;
@@ -78,7 +78,7 @@
   margin-bottom: var(--space-1);
 }
 
-.stat-value {
+.ffds-stat-value {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
   font-weight: 700;

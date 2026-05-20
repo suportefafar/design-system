@@ -2,26 +2,26 @@
    UTILITIES — BORDERS & RADIUS
    ══════════════════════════════════════════ */
 
-.border { border: 1px solid var(--border-color) !important; }
-.border-0 { border: 0 !important; }
-.border-top { border-top: 1px solid var(--border-color) !important; }
-.border-bottom { border-bottom: 1px solid var(--border-color) !important; }
-.border-start { border-left: 1px solid var(--border-color) !important; }
-.border-end { border-right: 1px solid var(--border-color) !important; }
+.ffds-border { border: 1px solid var(--border-color) !important; }
+.ffds-border-0 { border: 0 !important; }
+.ffds-border-top { border-top: 1px solid var(--border-color) !important; }
+.ffds-border-bottom { border-bottom: 1px solid var(--border-color) !important; }
+.ffds-border-start { border-left: 1px solid var(--border-color) !important; }
+.ffds-border-end { border-right: 1px solid var(--border-color) !important; }
 
-.border-primary { border-color: var(--color-primary) !important; }
-.border-secondary { border-color: var(--color-secondary) !important; }
-.border-white { border-color: var(--color-white) !important; }
+.ffds-border-primary { border-color: var(--color-primary) !important; }
+.ffds-border-secondary { border-color: var(--color-secondary) !important; }
+.ffds-border-white { border-color: var(--color-white) !important; }
 
 /* Border Radius */
-.rounded { border-radius: var(--radius-md) !important; }
-.rounded-0 { border-radius: 0 !important; }
-.rounded-sm { border-radius: var(--radius-sm) !important; }
-.rounded-lg { border-radius: var(--radius-lg) !important; }
-.rounded-circle { border-radius: 50% !important; }
-.rounded-pill { border-radius: var(--radius-full) !important; }
+.ffds-rounded { border-radius: var(--radius-md) !important; }
+.ffds-rounded-0 { border-radius: 0 !important; }
+.ffds-rounded-sm { border-radius: var(--radius-sm) !important; }
+.ffds-rounded-lg { border-radius: var(--radius-lg) !important; }
+.ffds-rounded-circle { border-radius: 50% !important; }
+.ffds-rounded-pill { border-radius: var(--radius-full) !important; }
 
 /* Shadow */
-.shadow-sm { box-shadow: var(--shadow-sm) !important; }
-.shadow { box-shadow: var(--shadow-md) !important; }
-.shadow-none { box-shadow: none !important; }
+.ffds-shadow-sm { box-shadow: var(--shadow-sm) !important; }
+.ffds-shadow { box-shadow: var(--shadow-md) !important; }
+.ffds-shadow-none { box-shadow: none !important; }

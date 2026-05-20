@@ -2,7 +2,7 @@
    ALERTS (Minimalist)
    ══════════════════════════════════════════ */
 
-.alert {
+.ffds-alert {
   position: relative;
   padding: var(--space-4) var(--space-6);
   margin-bottom: var(--space-4);
@@ -12,31 +12,31 @@
   line-height: 1.6;
 }
 
-.alert-success {
+.ffds-alert-success {
   color: #155724;
   background-color: var(--color-success-bg);
   border-color: var(--color-success-border);
 }
 
-.alert-danger {
+.ffds-alert-danger {
   color: #721c24;
   background-color: var(--color-error-bg);
   border-color: var(--color-error-border);
 }
 
-.alert-warning {
+.ffds-alert-warning {
   color: #856404;
   background-color: var(--color-warning-bg);
   border-color: var(--color-warning-border);
 }
 
-.alert-info {
+.ffds-alert-info {
   color: #0c5460;
   background-color: var(--color-info-bg);
   border-color: var(--color-info-border);
 }
 
-.alert-title {
+.ffds-alert-title {
   font-weight: 700;
   margin-bottom: var(--space-1);
 }

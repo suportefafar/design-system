@@ -2,41 +2,41 @@
    UTILITIES — TYPOGRAPHY
    ══════════════════════════════════════════ */
 
-.text-left { text-align: left !important; }
-.text-center { text-align: center !important; }
-.text-right { text-align: right !important; }
+.ffds-text-left { text-align: left !important; }
+.ffds-text-center { text-align: center !important; }
+.ffds-text-right { text-align: right !important; }
 
-.text-lowercase { text-transform: lowercase !important; }
-.text-uppercase { text-transform: uppercase !important; }
-.text-capitalize { text-transform: capitalize !important; }
+.ffds-text-lowercase { text-transform: lowercase !important; }
+.ffds-text-uppercase { text-transform: uppercase !important; }
+.ffds-text-capitalize { text-transform: capitalize !important; }
 
-.fw-light { font-weight: 300 !important; }
-.fw-normal { font-weight: 400 !important; }
-.fw-medium { font-weight: 500 !important; }
-.fw-semibold { font-weight: 600 !important; }
-.fw-bold { font-weight: 700 !important; }
+.ffds-fw-light { font-weight: 300 !important; }
+.ffds-fw-normal { font-weight: 400 !important; }
+.ffds-fw-medium { font-weight: 500 !important; }
+.ffds-fw-semibold { font-weight: 600 !important; }
+.ffds-fw-bold { font-weight: 700 !important; }
 
-.fst-italic { font-style: italic !important; }
-.fst-normal { font-style: normal !important; }
+.ffds-fst-italic { font-style: italic !important; }
+.ffds-fst-normal { font-style: normal !important; }
 
-.text-decoration-none { text-decoration: none !important; }
-.text-decoration-underline { text-decoration: underline !important; }
+.ffds-text-decoration-none { text-decoration: none !important; }
+.ffds-text-decoration-underline { text-decoration: underline !important; }
 
-.text-truncate {
+.ffds-text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.font-display { font-family: var(--font-display) !important; }
-.font-body { font-family: var(--font-body) !important; }
-.font-mono { font-family: var(--font-mono) !important; }
+.ffds-font-display { font-family: var(--font-display) !important; }
+.ffds-font-body { font-family: var(--font-body) !important; }
+.ffds-font-mono { font-family: var(--font-mono) !important; }
 
 /* Font sizes */
-.fs-1 { font-size: var(--text-6xl) !important; }
-.fs-2 { font-size: var(--text-5xl) !important; }
-.fs-3 { font-size: var(--text-4xl) !important; }
-.fs-4 { font-size: var(--text-3xl) !important; }
-.fs-5 { font-size: var(--text-2xl) !important; }
-.fs-6 { font-size: var(--text-xl) !important; }
-.small { font-size: var(--text-sm) !important; }
+.ffds-fs-1 { font-size: var(--text-6xl) !important; }
+.ffds-fs-2 { font-size: var(--text-5xl) !important; }
+.ffds-fs-3 { font-size: var(--text-4xl) !important; }
+.ffds-fs-4 { font-size: var(--text-3xl) !important; }
+.ffds-fs-5 { font-size: var(--text-2xl) !important; }
+.ffds-fs-6 { font-size: var(--text-xl) !important; }
+.ffds-small { font-size: var(--text-sm) !important; }

@@ -33,16 +33,16 @@ const FFDS = {
    * Toggles sidebar visibility
    */
   toggleSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    const overlay = document.querySelector('.sidebar-overlay');
+    const sidebar = document.querySelector('.ffds-sidebar');
+    const overlay = document.querySelector('.ffds-sidebar-overlay');
     
     if (window.innerWidth < 768) {
       // Mobile drawer toggle
-      if (sidebar) sidebar.classList.toggle('show');
-      if (overlay) overlay.classList.toggle('show');
+      if (sidebar) sidebar.classList.toggle('ffds-show');
+      if (overlay) overlay.classList.toggle('ffds-show');
     } else {
       // Desktop collapse toggle
-      if (sidebar) sidebar.classList.toggle('sidebar-collapsed');
+      if (sidebar) sidebar.classList.toggle('ffds-sidebar-collapsed');
     }
   },
 
@@ -52,12 +52,12 @@ const FFDS = {
   initSidebar() {
     // Add click listeners to overlays
     document.addEventListener('click', (e) => {
-      if (e.target.matches('.sidebar-overlay')) {
+      if (e.target.matches('.ffds-sidebar-overlay')) {
         this.toggleSidebar();
       }
       
       // Close sidebar when clicking links on mobile
-      if (window.innerWidth < 768 && e.target.closest('.sidebar-link')) {
+      if (window.innerWidth < 768 && e.target.closest('.ffds-sidebar-link')) {
         this.toggleSidebar();
       }
     });

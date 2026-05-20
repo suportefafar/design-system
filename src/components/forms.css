@@ -2,11 +2,11 @@
    FORMS (Minimalist)
    ══════════════════════════════════════════ */
 
-.form-group {
+.ffds-form-group {
   margin-bottom: var(--space-4);
 }
 
-.form-label {
+.ffds-form-label {
   display: inline-block;
   margin-bottom: var(--space-2);
   font-size: var(--text-sm);
@@ -14,7 +14,7 @@
   color: var(--color-gray-700);
 }
 
-.form-control {
+.ffds-form-control {
   display: block;
   width: 100%;
   padding: var(--space-2) var(--space-3);
@@ -30,7 +30,7 @@
   transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-.form-control:focus {
+.ffds-form-control:focus {
   color: var(--color-gray-800);
   background-color: var(--color-white);
   border-color: var(--color-primary);
@@ -38,39 +38,39 @@
   box-shadow: 0 0 0 0.25rem var(--color-primary-20);
 }
 
-.form-control::placeholder {
+.ffds-form-control::placeholder {
   color: var(--color-gray-400);
   opacity: 1;
 }
 
-.form-control:disabled,
-.form-control[readonly] {
+.ffds-form-control:disabled,
+.ffds-form-control[readonly] {
   background-color: var(--color-gray-100);
   opacity: 1;
 }
 
 /* Sizes */
-.form-control-sm {
+.ffds-form-control-sm {
   padding: var(--space-1) var(--space-2);
   font-size: var(--text-sm);
   border-radius: var(--radius-sm);
 }
 
-.form-control-lg {
+.ffds-form-control-lg {
   padding: var(--space-3) var(--space-4);
   font-size: var(--text-lg);
   border-radius: var(--radius-lg);
 }
 
 /* Checkboxes & Radios */
-.form-check {
+.ffds-form-check {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
 
-.form-check-input {
+.ffds-form-check-input {
   float: left;
   margin-left: -1.5em;
   width: 1em;
@@ -87,15 +87,15 @@
   accent-color: var(--color-primary);
 }
 
-.form-check-input[type="checkbox"] {
+.ffds-form-check-input[type="checkbox"] {
   border-radius: 0.25em;
 }
 
-.form-check-input[type="radio"] {
+.ffds-form-check-input[type="radio"] {
   border-radius: 50%;
 }
 
-.form-check-input:checked {
+.ffds-form-check-input:checked {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
 }

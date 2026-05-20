@@ -3,26 +3,26 @@
    ══════════════════════════════════════════ */
 
 /* Text Colors */
-.text-primary { color: var(--color-primary) !important; }
-.text-primary-dark { color: var(--color-primary-dark) !important; }
-.text-secondary { color: var(--color-secondary) !important; }
-.text-success { color: var(--color-success) !important; }
-.text-danger { color: var(--color-error) !important; }
-.text-warning { color: var(--color-warning) !important; }
-.text-info { color: var(--color-info) !important; }
-.text-white { color: var(--color-white) !important; }
-.text-muted { color: var(--color-gray-500) !important; }
-.text-body { color: var(--color-gray-800) !important; }
+.ffds-text-primary { color: var(--color-primary) !important; }
+.ffds-text-primary-dark { color: var(--color-primary-dark) !important; }
+.ffds-text-secondary { color: var(--color-secondary) !important; }
+.ffds-text-success { color: var(--color-success) !important; }
+.ffds-text-danger { color: var(--color-error) !important; }
+.ffds-text-warning { color: var(--color-warning) !important; }
+.ffds-text-info { color: var(--color-info) !important; }
+.ffds-text-white { color: var(--color-white) !important; }
+.ffds-text-muted { color: var(--color-gray-500) !important; }
+.ffds-text-body { color: var(--color-gray-800) !important; }
 
 /* Background Colors */
-.bg-primary { background-color: var(--color-primary) !important; }
-.bg-secondary { background-color: var(--color-secondary) !important; }
-.bg-secondary-dark { background-color: var(--color-secondary-dark) !important; }
-.bg-success { background-color: var(--color-success-bg) !important; }
-.bg-danger { background-color: var(--color-error-bg) !important; }
-.bg-warning { background-color: var(--color-warning-bg) !important; }
-.bg-info { background-color: var(--color-info-bg) !important; }
-.bg-white { background-color: var(--color-white) !important; }
-.bg-light { background-color: var(--color-gray-50) !important; }
-.bg-dark { background-color: var(--color-secondary-dark) !important; }
-.bg-transparent { background-color: transparent !important; }
+.ffds-bg-primary { background-color: var(--color-primary) !important; }
+.ffds-bg-secondary { background-color: var(--color-secondary) !important; }
+.ffds-bg-secondary-dark { background-color: var(--color-secondary-dark) !important; }
+.ffds-bg-success { background-color: var(--color-success-bg) !important; }
+.ffds-bg-danger { background-color: var(--color-error-bg) !important; }
+.ffds-bg-warning { background-color: var(--color-warning-bg) !important; }
+.ffds-bg-info { background-color: var(--color-info-bg) !important; }
+.ffds-bg-white { background-color: var(--color-white) !important; }
+.ffds-bg-light { background-color: var(--color-gray-50) !important; }
+.ffds-bg-dark { background-color: var(--color-secondary-dark) !important; }
+.ffds-bg-transparent { background-color: transparent !important; }

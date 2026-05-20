@@ -2,46 +2,46 @@
    UTILITIES — DISPLAY & VISIBILITY
    ══════════════════════════════════════════ */
 
-.d-none { display: none !important; }
-.d-inline { display: inline !important; }
-.d-inline-block { display: inline-block !important; }
-.d-block { display: block !important; }
-.d-flex { display: flex !important; }
-.d-inline-flex { display: inline-flex !important; }
-.d-grid { display: grid !important; }
+.ffds-d-none { display: none !important; }
+.ffds-d-inline { display: inline !important; }
+.ffds-d-inline-block { display: inline-block !important; }
+.ffds-d-block { display: block !important; }
+.ffds-d-flex { display: flex !important; }
+.ffds-d-inline-flex { display: inline-flex !important; }
+.ffds-d-grid { display: grid !important; }
 
 /* Responsive Display (sm, md, lg, xl) */
 @media (min-width: 576px) {
-  .d-sm-none { display: none !important; }
-  .d-sm-block { display: block !important; }
-  .d-sm-flex { display: flex !important; }
+  .ffds-d-sm-none { display: none !important; }
+  .ffds-d-sm-block { display: block !important; }
+  .ffds-d-sm-flex { display: flex !important; }
 }
 
 @media (min-width: 768px) {
-  .d-md-none { display: none !important; }
-  .d-md-block { display: block !important; }
-  .d-md-flex { display: flex !important; }
+  .ffds-d-md-none { display: none !important; }
+  .ffds-d-md-block { display: block !important; }
+  .ffds-d-md-flex { display: flex !important; }
 }
 
 @media (min-width: 992px) {
-  .d-lg-none { display: none !important; }
-  .d-lg-block { display: block !important; }
-  .d-lg-flex { display: flex !important; }
+  .ffds-d-lg-none { display: none !important; }
+  .ffds-d-lg-block { display: block !important; }
+  .ffds-d-lg-flex { display: flex !important; }
 }
 
 @media (min-width: 1200px) {
-  .d-xl-none { display: none !important; }
-  .d-xl-block { display: block !important; }
-  .d-xl-flex { display: flex !important; }
+  .ffds-d-xl-none { display: none !important; }
+  .ffds-d-xl-block { display: block !important; }
+  .ffds-d-xl-flex { display: flex !important; }
 }
 
-.sticky-top {
+.ffds-sticky-top {
   position: sticky;
   top: 0;
   z-index: var(--z-sticky);
 }
 
-.fixed-top {
+.ffds-fixed-top {
   position: fixed !important;
   top: 0 !important;
   right: 0 !important;
@@ -50,5 +50,5 @@
 }
 
 /* Visibility */
-.visible { visibility: visible !important; }
-.invisible { visibility: hidden !important; }
+.ffds-visible { visibility: visible !important; }
+.ffds-invisible { visibility: hidden !important; }

@@ -2,20 +2,20 @@
    SIDEBAR (App Layout Style)
    ══════════════════════════════════════════ */
 
-.app-container {
+.ffds-app-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
 }
 
-.app-main {
+.ffds-app-main {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
 
-.sidebar {
+.ffds-sidebar {
   width: 260px;
   background-color: var(--color-white);
   border-right: 1px solid var(--border-color);
@@ -26,11 +26,11 @@
   overflow-x: hidden;
 }
 
-.sidebar-collapsed {
+.ffds-sidebar-collapsed {
   width: 72px;
 }
 
-.sidebar-nav {
+.ffds-sidebar-nav {
   padding: var(--space-2);
   list-style: none;
   margin: 0;
@@ -38,7 +38,7 @@
   overflow-y: auto;
 }
 
-.sidebar-link {
+.ffds-sidebar-link {
   display: flex;
   align-items: center;
   padding: var(--space-3) var(--space-4);
@@ -50,36 +50,36 @@
   white-space: nowrap;
 }
 
-.sidebar-link:hover, 
-.sidebar-link.active {
+.ffds-sidebar-link:hover, 
+.ffds-sidebar-link.ffds-active {
   background-color: var(--color-primary-10);
   color: var(--color-primary-dark);
 }
 
-.sidebar-link i,
-.sidebar-link svg {
+.ffds-sidebar-link i,
+.ffds-sidebar-link svg {
   margin-right: var(--space-4);
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-.sidebar-collapsed .sidebar-link span {
+.ffds-sidebar-collapsed .ffds-sidebar-link span {
   display: none;
 }
 
-.sidebar-collapsed .sidebar-link {
+.ffds-sidebar-collapsed .ffds-sidebar-link {
   justify-content: center;
   padding: var(--space-3);
 }
 
-.sidebar-collapsed .sidebar-link i,
-.sidebar-collapsed .sidebar-link svg {
+.ffds-sidebar-collapsed .ffds-sidebar-link i,
+.ffds-sidebar-collapsed .ffds-sidebar-link svg {
   margin-right: 0;
 }
 
 /* Content Area */
-.content-area {
+.ffds-content-area {
   flex: 1;
   overflow-y: auto;
   padding: var(--space-6);
@@ -88,7 +88,7 @@
 
 /* Mobile Responsive */
 @media (max-width: 767px) {
-  .sidebar {
+  .ffds-sidebar {
     position: fixed;
     left: -260px;
     top: 0; /* Cover full screen */
@@ -97,18 +97,18 @@
     height: 100vh;
   }
   
-  .sidebar.show {
+  .ffds-sidebar.ffds-show {
     left: 0;
     box-shadow: var(--shadow-md);
   }
   
-  .sidebar-collapsed {
+  .ffds-sidebar-collapsed {
     width: 260px; /* Reset on mobile */
   }
 }
 
 /* Sidebar Overlay */
-.sidebar-overlay {
+.ffds-sidebar-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -119,6 +119,6 @@
   z-index: var(--z-offcanvas-backdrop, 1035);
 }
 
-.sidebar-overlay.show {
+.ffds-sidebar-overlay.ffds-show {
   display: block;
 }

@@ -2,7 +2,7 @@
    NAVIGATION (Minimalist)
    ══════════════════════════════════════════ */
 
-.navbar {
+.ffds-navbar {
   position: relative;
   display: flex;
   align-items: center;
@@ -12,13 +12,13 @@
   border-bottom: 3px solid var(--color-primary);
 }
 
-.navbar > .container {
+.ffds-navbar > .ffds-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar-brand {
+.ffds-navbar-brand {
   display: flex;
   align-items: center;
   gap: var(--space-2);
@@ -30,7 +30,7 @@
   white-space: nowrap;
 }
 
-.navbar-nav {
+.ffds-navbar-nav {
   display: none; /* Hidden on mobile by default */
   flex-direction: column;
   padding-left: 0;
@@ -38,7 +38,7 @@
   list-style: none;
 }
 
-.navbar-toggler {
+.ffds-navbar-toggler {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,25 +52,25 @@
   transition: background-color var(--transition-fast);
 }
 
-.navbar-toggler:hover {
+.ffds-navbar-toggler:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 768px) {
-  .navbar-nav {
+  .ffds-navbar-nav {
     display: flex; /* Show on desktop */
     flex-direction: row;
   }
-  .navbar-nav .nav-link {
+  .ffds-navbar-nav .ffds-nav-link {
     margin-left: var(--space-6);
     padding: var(--space-1) var(--space-2);
   }
-  .navbar-toggler {
+  .ffds-navbar-toggler {
     display: none; /* Hide toggler on desktop if needed, or keep for sidebar */
   }
 }
 
-.nav-link {
+.ffds-nav-link {
   display: block;
   padding: var(--space-2) 0;
   font-size: var(--text-sm);
@@ -79,13 +79,13 @@
   transition: color var(--transition-fast);
 }
 
-.nav-link:hover,
-.nav-link.active {
+.ffds-nav-link:hover,
+.ffds-nav-link.ffds-active {
   color: var(--color-primary);
 }
 
 /* Breadcrumb */
-.breadcrumb {
+.ffds-breadcrumb {
   display: flex;
   flex-wrap: wrap;
   padding: 0 0;
@@ -93,27 +93,27 @@
   list-style: none;
 }
 
-.breadcrumb-item {
+.ffds-breadcrumb-item {
   font-size: var(--text-sm);
   color: var(--color-gray-500);
 }
 
-.breadcrumb-item + .breadcrumb-item {
+.ffds-breadcrumb-item + .ffds-breadcrumb-item {
   padding-left: var(--space-2);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.ffds-breadcrumb-item + .ffds-breadcrumb-item::before {
   float: left;
   padding-right: var(--space-2);
   color: var(--color-gray-300);
   content: "/";
 }
 
-.breadcrumb-item a {
+.ffds-breadcrumb-item a {
   color: var(--color-gray-600);
 }
 
-.breadcrumb-item.active {
+.ffds-breadcrumb-item.ffds-active {
   color: var(--color-secondary-dark);
   font-weight: 600;
 }
